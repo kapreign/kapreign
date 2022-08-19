@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { loadFull } from "tsparticles";
+// import { loadFull } from "tsparticles";
 // import Particles from "react-tsparticles";
 import Banners from "../Components/Banners";
 import Footer from "../Components/Footer";
