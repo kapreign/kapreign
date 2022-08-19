@@ -1,10 +1,4 @@
 import avatar from "../Assets/Images/Person.webp";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  solid,
-  regular,
-  brands,
-} from "@fortawesome/fontawesome-svg-core/import.macro";
 export default function Banners(props) {
   const theme = props.theme;
 

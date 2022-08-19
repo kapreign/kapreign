@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import { loadFull } from "tsparticles";
-import Particles from "react-tsparticles";
+// import Particles from "react-tsparticles";
 import Banners from "../Components/Banners";
 import Footer from "../Components/Footer";
 import Navbar from "../Components/Navbar";
 import Projects from "../Components/Projects";
-import Teams from "../Components/Teams";
+// import Teams from "../Components/Teams";
 import Landing from "./Landing";
 import Banr from "../Components/Banr";
 import Navmob from "../Components/Navmob";
-import options from "../Components/Particles";
+// import options from "../Components/Particles";
 
 export default function MainLayout({ children }) {
   const [theme, setTheme] = useState(false);

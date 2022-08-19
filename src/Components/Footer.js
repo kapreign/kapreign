@@ -1,10 +1,4 @@
 import logo from "../Assets/Images/kap-logo.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  solid,
-  regular,
-  brands,
-} from "@fortawesome/fontawesome-svg-core/import.macro";
 export default function Footer (props) {
     const theme = props.theme
 
