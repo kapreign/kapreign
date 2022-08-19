@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: "QUICK";
+  src: url("./Assets/Fonts/QuickSand.ttf");
+}
+@font-face {
+  font-family: "QUICK-REG";
+  src: url("./Assets/Fonts/Quicksand-Regular.ttf");
+}
+@font-face {
+  font-family: "QUICK-BOLD";
+  src: url("./Assets/Fonts/Quicksand-Bold.ttf");
+}
+@font-face {
+  font-family: "QUICK-THIN";
+  src: url("./Assets/Fonts/Quicksand-Light.ttf");
+}
+@font-face {
+  font-family: "RALE";
+  src: url("./Assets/Fonts/Raleway.ttf");
+}
+
+body {
+  margin: 0;
+  font-family: "QUICK-REG";
+}

@@ -1,0 +1,11 @@
+#tsparticles canvas {
+  animation: mymove 5s infinite !important;
+}
+@keyframes mymove {
+  from {
+    background-color: red !important;
+  }
+  to {
+    background-color: blue !important;
+  }
+}
