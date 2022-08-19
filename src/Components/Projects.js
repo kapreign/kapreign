@@ -44,9 +44,9 @@ export default function Projects(props) {
         <h1 className="text-m font-bold tracking-wide text-center text-kap uppercase mb-7">
           our happy clients
         </h1>
-        <div className="flex grid items-center justify-center grid-cols-4 grid-cols-12 gap-y-8">
+        <div className="flex flex-col md:grid items-center justify-center grid-cols-1 md:grid-cols-4 md:gap-4">
           {projects.map((images) => (
-            <div className="flex items-center justify-center col-span-6 sm:col-span-4 md:col-span-3 xl:col-span-2 flex items-center w-full w-44 h-32 mb-3 text-lg bg-paleBlue rounded-md hover:bg-lightBlue ">
+            <div className="flex items-center justify-center flex items-center w-full w-44 h-32 mb-3 text-lg bg-paleBlue rounded-md hover:bg-lightBlue ">
               <img
                 src={images.img}
                 alt="Disney Plus"

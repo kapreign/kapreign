@@ -9,7 +9,7 @@ export default function Cards({ title, technologies, cardNo, cardIcon }) {
       <div className="overflow-auto">
       </div>
       <p className="card__apply text-gray text-sm">
-        <a className="card__link text-sm" href="#">
+        <a className="card__link text-sm" href="https://wa.me/9497656243">
           Contact us<i className="fas fa-arrow-right"></i>
         </a>
       </p>

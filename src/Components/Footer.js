@@ -20,7 +20,7 @@ export default function Footer (props) {
                 <a href="#" class="mr-4 hover:underline md:mr-6 ">Licensing</a>
             </li>
             <li>
-                <a href="#" class="hover:underline">Contact</a>
+                <a href="https://wa.me/9497656243" class="hover:underline">Contact</a>
             </li>
         </ul>
     </div>

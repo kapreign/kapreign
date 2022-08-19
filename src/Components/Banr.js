@@ -33,7 +33,7 @@ export default function Banr(props) {
 
                 <div class="relative flex flex-col sm:flex-row sm:space-x-4 mt-8 sm:mt-10 md:justify-center sm:justify-center lg:justify-start">
                   <a
-                    href="#_"
+                    href="https://wa.me/9497656243"
                     class="flex items-center w-full px-10 py-3 mb-3 text-lg text-white bg-blue rounded-md sm:mb-0 hover:bg-lightBlue sm:w-auto"
                   >
                     Contact us
