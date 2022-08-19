@@ -18,13 +18,13 @@ export default function MainLayout({ children }) {
     setTheme(!theme);
   };
 
-  const particlesInit = async (main) => {
-    await loadFull(main);
-  };
+  // const particlesInit = async (main) => {
+  //   await loadFull(main);
+  // };
 
-  const particlesLoaded = (container) => {
-    console.log(container);
-  };
+  // const particlesLoaded = (container) => {
+  //   console.log(container);
+  // };
   const menuOpen = () => {
     setMenu(!menu);
   };
