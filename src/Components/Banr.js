@@ -63,12 +63,12 @@ export default function Banr(props) {
               <div className=" text-lightGray flex items-center justify-center mt-10 space-x-6 lg:justify-start sm:space-x-8">
                 <div className="flex items-center">
                   <p className="text-3xl font-medium text-gray-900 sm:text-4xl font-pj">
-                    2943
+                    5
                   </p>
                   <p className="ml-3 text-sm text-gray-900 font-pj">
                     Satisfied
                     <br />
-                    Customers
+                    Customers & still counting
                   </p>
                 </div>
 
@@ -113,16 +113,6 @@ export default function Banr(props) {
                       y2="28.584"
                     ></line>
                   </svg>
-                </div>
-
-                <div className="flex items-center">
-                  <p className="text-3xl font-medium sm:text-4xl font-pj">
-                    2.5 M+
-                  </p>
-                  <p className="ml-3 text-sm text-gray-900 font-pj">
-                    Active <br />
-                    Users
-                  </p>
                 </div>
               </div>
             </div>
