@@ -8,7 +8,7 @@ export default function Navbar(props) {
 const theme = props.theme
 
   return (
-    <div className={`navbar w-full p-3 py-10 shadow-md h-14 flex items-center sm:justify-between" ${theme ? "bg-lightBlack" : "bg-white"}`} >
+    <div className={`navbar w-full p-3 py-10 shadow-md h-14 flex items-center sm:justify-between" ${theme ? "bg-white" : "bg-lightBlack"}`} >
           <div className="container flex items-center justify-between py-5 mx-auto max-w-7xl">
           <div className="flex items-center justify-between">
       <img src={logo} alt="" className="h-6"></img>
