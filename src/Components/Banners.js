@@ -20,7 +20,7 @@ export default function Banners(props) {
                  Our vision is to empower business with innovative and effective solutions to help them achieve their business goals and enhance the digital presence.
                 </p>
 
-                <div className="relative flex flex-col sm:flex-row sm:space-x-4 mt-8 sm:mt-10 md:justify-center sm:justify-center lg:justify-start">
+                <div className="relative flex flex-col sm:flex-row sm:space-x-4 mt-8 sm:mt-10 justify-center">
                   <a
                     href="https://wa.me/9497656243"
                     className="flex items-center px-10 py-3 text-white bg-gray rounded-md hover:bg-lightGray hover:text-white"
