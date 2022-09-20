@@ -23,7 +23,6 @@ export default function MainLayout({ children }) {
   };
 
   const particlesLoaded = (container) => {
-    console.log(container);
   };
   const menuOpen = () => {
     setMenu(!menu);
