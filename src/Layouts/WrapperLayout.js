@@ -12,7 +12,7 @@ import Navmob from "../Components/Navmob";
 import options from "../Components/Particles";
 
 export default function MainLayout({ children }) {
-  const [theme, setTheme] = useState(false);
+  const [theme, setTheme] = useState(true);
   const [menu, setMenu] = useState(false);
   const themeChanger = () => {
     setTheme(!theme);
@@ -36,7 +36,7 @@ export default function MainLayout({ children }) {
       {menu ? <Navmob theme={theme} /> : ""}
       <Particles
         id="tsparticles"
-        className="h-screen absolute z-0 w-full"
+        className="h-screen absolute z-10 w-full"
         init={particlesInit}
         loaded={particlesLoaded}
         options={options}
