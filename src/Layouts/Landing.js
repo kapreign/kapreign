@@ -24,7 +24,7 @@ export default function Landing(props) {
           </span>
         </div>
 
-        <div className=" flex md:wrap md:justify-around overflow-auto">
+        <div className=" md:flex md:wrap md:justify-around overflow-auto">
           <Cards
             title="Web Application development"
             technologies="Web applications, E-Commerce, CMS, B2B, ERP/CRM"
