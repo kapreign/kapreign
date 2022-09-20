@@ -59,7 +59,7 @@ export default function Projects(props) {
           {projects.map((images) => (
             <div
               key={images.name}
-              className="flex items-center justify-center flex items-center w-full w-44 h-32 mb-3 text-lg bg-paleBlue rounded-md hover:bg-lightBlue "
+              className="flex items-center justify-center flex items-center w-full w-44 h-32 mb-3 text-lg bg-paleBlue rounded-md hover:bg-lightBlue m-[2px]"
             >
               {images.img ? (
                 <img
