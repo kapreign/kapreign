@@ -23,7 +23,7 @@ export default function Banr(props) {
                 }`}
               >
                 <h1 className="font-rale md:text-4xl text-2xl font-bold md:text-center text-left leading-tight sm:text-5xl sm:leading-tight lg:leading-tight lg:text-6xl font-pj">
-                  Created by Passion ,Delivered with Profession.
+                  Created by Passion, Delivered with Profession.
                 </h1>
                 <p className="mt-2 text-lg md:text-center text-left text-gray-600 sm:mt-8 font-inter">
                   Young, Passionate and innovative team capable of executing
