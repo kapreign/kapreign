@@ -58,7 +58,7 @@ export default function Landing(props) {
             }
           />
           <Cards
-            title="Business process outsourcing & Consulting"
+            title="Business process outsourcing"
             technologies="IT Consulting, Market Research, Tele-Services, Marketing Solutions"
             cardNo={4}
             cardIcon={
