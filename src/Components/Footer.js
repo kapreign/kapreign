@@ -25,7 +25,7 @@ export default function Footer (props) {
         </ul>
     </div>
     <hr class="my-6 border-lightGray sm:mx-auto dark:border-gray lg:my-8" />
-    <span class="block text-sm text-lightGray sm:text-center">© 2023 <a href="https://capreign.com/" class="hover:underline">Kapreign™</a>. All Rights Reserved.
+    <span class="block text-sm text-lightGray sm:text-center">© 2023 <a href="https://kapreign.com/" class="hover:underline">Kapreign™</a>. All Rights Reserved.
     </span>
 </footer>
 
