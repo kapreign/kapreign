@@ -4,12 +4,12 @@ export default function Footer (props) {
 
     return (
 
-<footer class={`p-4 bg-white rounded-lg shadow md:px-6 md:py-8 ${theme ? "bg-blaack" :"bg-offWhite"}`}>
+<footer class={`p-4 bg-white shadow md:px-6 md:py-8 ${theme ? "bg-blaack" :"bg-offWhite"}`}>
     <div class="sm:flex sm:items-center sm:justify-center">
         <a href="https://capreign.com/" class="flex items-center justify-center mb-4 sm:mb-0">
             <img src={logo} alt="Capreign Logo" />
                    </a>
-        <ul class="flex flex-wrap items-center mb-6 text-sm text-lightGray sm:mb-0 text-gray">
+        <ul class="flex flex-wrap items-center mb-6 text-sm text-lightGray sm:mb-0 ">
             <li>
                 <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
             </li>
@@ -24,8 +24,8 @@ export default function Footer (props) {
             </li>
         </ul>
     </div>
-    <hr class="my-6 border-gray sm:mx-auto dark:border-gray lg:my-8" />
-    <span class="block text-sm text-gray sm:text-center">© 2022 <a href="https://capreign.com/" class="hover:underline">Cpareign™</a>. All Rights Reserved.
+    <hr class="my-6 border-lightGray sm:mx-auto dark:border-gray lg:my-8" />
+    <span class="block text-sm text-lightGray sm:text-center">© 2023 <a href="https://capreign.com/" class="hover:underline">Kapreign™</a>. All Rights Reserved.
     </span>
 </footer>
 

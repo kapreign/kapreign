@@ -34,7 +34,7 @@ export default function Banr(props) {
                 <div class="relative flex flex-col sm:flex-row sm:space-x-4 mt-8 sm:mt-10 justify-center">
                   <a
                     href="https://wa.me/9497656243"
-                    class="flex items-center w-full px-10 py-3 mb-3 text-lg text-white bg-blue rounded-md sm:mb-0 hover:bg-lightBlue sm:w-auto"
+                    class="flex items-center w-full px-10 z-50 py-3 mb-3 text-lg text-white bg-blue rounded-md sm:mb-0 hover:bg-lightBlue sm:w-auto"
                   >
                     Contact us
                   </a>
@@ -59,64 +59,7 @@ export default function Banr(props) {
                   </a>
                 </div>
               </div>
-
-              <div className=" text-lightGray flex items-center justify-center mt-10 space-x-6 lg:justify-start sm:space-x-8">
-                <div className="flex items-center">
-                  <p className="text-3xl font-medium text-gray-900 sm:text-4xl font-pj">
-                    7
-                  </p>
-                  <p className="ml-3 text-sm text-gray-900 font-pj">
-                    Satisfied
-                    <br />
-                    Customers & still counting
-                  </p>
-                </div>
-
-                <div className="hidden sm:block">
-                  <svg
-                    className=""
-                    width="16"
-                    height="39"
-                    viewBox="0 0 16 39"
-                    fill="none"
-                    stroke="currentColor"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <line
-                      x1="0.72265"
-                      y1="10.584"
-                      x2="15.7226"
-                      y2="0.583975"
-                    ></line>
-                    <line
-                      x1="0.72265"
-                      y1="17.584"
-                      x2="15.7226"
-                      y2="7.58398"
-                    ></line>
-                    <line
-                      x1="0.72265"
-                      y1="24.584"
-                      x2="15.7226"
-                      y2="14.584"
-                    ></line>
-                    <line
-                      x1="0.72265"
-                      y1="31.584"
-                      x2="15.7226"
-                      y2="21.584"
-                    ></line>
-                    <line
-                      x1="0.72265"
-                      y1="38.584"
-                      x2="15.7226"
-                      y2="28.584"
-                    ></line>
-                  </svg>
-                </div>
-              </div>
             </div>
-
             <div>
               <img className="md:w-full w-4/5" src={banners} alt="" />
             </div>

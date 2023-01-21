@@ -10,6 +10,7 @@ import Landing from "./Landing";
 import Banr from "../Components/Banr";
 import Navmob from "../Components/Navmob";
 import options from "../Components/Particles";
+import ContactUs from "../Components/ContactUs";
 
 export default function MainLayout({ children }) {
   const [theme, setTheme] = useState(true);
@@ -46,6 +47,7 @@ export default function MainLayout({ children }) {
       <Projects theme={theme} />
       {/* <Teams theme={theme} /> */}
       <Banners theme={theme} />
+      <ContactUs theme={theme}/>
       <Footer theme={theme} />
     </div>
   );

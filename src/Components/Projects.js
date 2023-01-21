@@ -8,6 +8,8 @@ import bull from "../Assets/Images/bull.png";
 import voyage from "../Assets/Images/voyage.png";
 import React from "react";
 import Popup from "./Popup";
+import alive from "../Assets/Images/alive.png";
+import science from "../Assets/Images/science.png";
 
 export default function Projects(props) {
   const [popup, popupStats] = useState(false);
@@ -22,8 +24,16 @@ export default function Projects(props) {
       name: "kapreign",
     },
     {
+      name: "alive",
+      img: alive,
+    },
+    {
       img: voyage,
       name: "kapreign",
+    },
+    {
+      img: science,
+      name: "scienceXpoleres",
     },
     {
       img: nexcure,
@@ -55,11 +65,11 @@ export default function Projects(props) {
         <h1 className="text-m font-bold tracking-wide text-center text-kap uppercase mb-7">
           our happy clients
         </h1>
-        <div className="flex flex-col items-center justify-center grid md:grid-cols-4 grid-cols-2 md:grid-cols-4 md:gap-4">
+        <div className=" items-center justify-center grid md:grid-cols-4 grid-cols-2 md:gap-4">
           {projects.map((images) => (
             <div
               key={images.name}
-              className="flex items-center justify-center flex items-center w-full w-44 h-32 mb-3 text-lg bg-lightBlue rounded-md hover:bg-kap m-[2px]"
+              className="flex items-center justify-center w-44 h-32 mb-3 text-lg bg-lightBlue rounded-md hover:bg-kap m-[2px]"
             >
               {images.img ? (
                 <img
