@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}","./node_modules/flowbite/**/*.js"],
   theme: {
     colors: {
       blue: "#423EF4",
@@ -21,7 +21,9 @@ module.exports = {
       white: "#ffffff",
       purple: "#4b286e",
       lightBlack:"#191919",
-      blaack:"#2C2C2C"
+      blaack:"#2C2C2C",
+      blacked:"#000000",
+      dimBlack:"#000000f5"
     },
     borderWidth: {
       DEFAULT: "1px",
@@ -42,5 +44,6 @@ module.exports = {
     },
   },
 
-  plugins: [require("tailwind-scrollbar")],
+  plugins: [require("tailwind-scrollbar"), require('flowbite/plugin')],
+  
 };

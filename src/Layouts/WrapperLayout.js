@@ -34,7 +34,7 @@ export default function MainLayout({ children }) {
       <Navbar changeTheme={themeChanger} theme={theme} menuOpen={menuOpen} />
       {children}
       {menu ? <Navmob theme={theme} /> : ""}
-      <Particles
+      {/* <Particles
         id="tsparticles"
         className="h-screen absolute z-10 w-full"
         init={particlesInit}
@@ -42,12 +42,10 @@ export default function MainLayout({ children }) {
         options={options}
       />
       <Banr theme={theme} />
-      {/* <Banner theme={theme}/> */}
       <Landing theme={theme} />
       <Projects theme={theme} />
-      {/* <Teams theme={theme} /> */}
       <Banners theme={theme} />
-      <ContactUs theme={theme}/>
+      <ContactUs theme={theme}/> */}
       <Footer theme={theme} />
     </div>
   );
