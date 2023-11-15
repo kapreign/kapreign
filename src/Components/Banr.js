@@ -1,10 +1,47 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import banners from "../Assets/Images/frame.webp";
+import { motion } from "framer-motion";
+// import ReactPlayer from "react-player";
+// import CardVideo from '../Assets/video/home'
 
 export default function Banr(props) {
   const theme = props.theme;
+  const [scrollY, setScrollY] = useState(0);
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const animationVariants = {
+    inView: {
+      opacity: 1,
+      x: 0,
+      y: 0,
+      transition: {
+        duration: 1,
+        ease: "easeInOut",
+      },
+    },
+    outOfView: {
+      opacity: 0,
+      x: -50,
+      y: 0,
+      transition: {
+        duration: 1,
+        ease: "easeInOut",
+      },
+    },
+  };
   return (
-    <div className={`relative ${theme ? "bg-lightBlack" : "bg-offWhite"}`}>
+    <div className={`relative ${theme ? "bg-blacked" : "bg-blacked"}`}>
+    {/* <div className={`relative ${theme ? "bg-lightBlack" : "bg-offWhite"}`}> */}
       <div className="absolute bottom-0 right-0 overflow-hidden lg:inset-y-0">
         <img
           className="w-auto h-full"
@@ -25,11 +62,18 @@ export default function Banr(props) {
                 <h1 className="font-rale md:text-4xl text-2xl font-bold md:text-center text-left leading-tight sm:text-5xl sm:leading-tight lg:leading-tight lg:text-6xl font-pj">
                   Created by Passion, Delivered with Profession.
                 </h1>
-                <p className="mt-2 text-lg md:text-center text-left text-gray-600 sm:mt-8 font-inter">
-                  Young, Passionate and innovative team capable of executing
-                  quality and advanced solutions to make unique and resonating
-                  business success.
-                </p>
+
+                <motion.div
+                  initial="outOfView"
+                  animate={scrollY > 0 ? "inView" : "outOfView"}
+                  variants={animationVariants}
+                >
+                  <p className="mt-2 text-lg md:text-center text-left text-gray-400 sm:mt-8 font-inter">
+                    Young, Passionate and innovative team capable of executing
+                    quality and advanced solutions to make unique and resonating
+                    business success.
+                  </p>
+                </motion.div>
 
                 <div class="relative flex flex-col sm:flex-row sm:space-x-4 mt-8 sm:mt-10 justify-center">
                   <a
@@ -62,6 +106,7 @@ export default function Banr(props) {
             </div>
             <div>
               <img className="md:w-full w-4/5" src={banners} alt="" />
+             
             </div>
           </div>
         </div>

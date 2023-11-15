@@ -25,4 +25,9 @@
 body {
   margin: 0;
   font-family: "QUICK-REG";
+  /* overflow: hidden; */
+}
+
+body::-webkit-scrollbar{
+  display: none;
 }
