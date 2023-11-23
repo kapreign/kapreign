@@ -36,9 +36,9 @@ export default function ContactUs({ theme }) {
                 <p className="font-medium leading-relaxed text-white">
                   info@kapreign.com
                 </p>
-                <p className="font-medium leading-relaxed text-white">
+                {/* <p className="font-medium leading-relaxed text-white">
                   support@kapreign.com
-                </p>
+                </p> */}
               </div>
             </div>
             <div className="w-full md:w-1/3 p-3">
@@ -57,7 +57,7 @@ export default function ContactUs({ theme }) {
                   Call Us
                 </h3>
                 <p className="font-medium leading-relaxed text-white">
-                  +91 9497656243
+                  +91 9746574532
                 </p>
                 <p className="font-medium leading-relaxed text-white">
                   +91 7907226404
