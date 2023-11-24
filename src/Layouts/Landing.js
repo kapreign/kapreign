@@ -170,16 +170,16 @@ export default function Landing(props) {
         >
           {" "}
           <div className="m-3  p-6">
-            <span className="font-rale font-black md:text-5xl text-2xl text-kap text-left">
-              Collaborate
+            <span className="font-rale font-black md:text-5xl text-2xl  text-white text-left">
+              Collaborate for your
             </span>
             <span
-              className={`font-rale font-black md:text-5xl text-2xl  text-left" ${
+              className={`font-rale font-black md:text-5xl text-2xl text-kap  text-left" ${
                 theme ? "text-white" : "text-black"
               }`}
             >
               {" "}
-              for your digital experience
+               Digital Experience
             </span>
           </div>
           <motion.h1 style={textAnimation}>Hello, world!</motion.h1>
@@ -203,7 +203,7 @@ export default function Landing(props) {
           <Cards
             title="Mobile"
             subtitle="Application"
-            technologies="Android & IOS Applications, E-Commerce, Hybrid & native Applications"
+            technologies="Android & IOS Applications, E-Commerce, Native Applications"
             cardNo={2}
             cardIcon={
               <FontAwesomeIcon
@@ -219,7 +219,7 @@ export default function Landing(props) {
           <Cards
             title="Digital"
             subtitle="Marketing"
-            technologies="Web Analytics, Content Development, SEO, Email Marketing & Social Media Marketing"
+            technologies="Web Analytics, SEO, Email Marketing & Social Media Marketing"
             cardNo={3}
             cardIcon={
               <FontAwesomeIcon
@@ -235,7 +235,7 @@ export default function Landing(props) {
           <Cards
             title="Business Process "
             subtitle="Outsourcing"
-            technologies="IT Consulting, Market Research, Tele-Services, Marketing Solutions"
+            technologies="IT Consulting, Data Analytics, Marketing Solutions"
             cardNo={4}
             cardIcon={
               <FontAwesomeIcon icon={solid("headset")} bounce color="white" />

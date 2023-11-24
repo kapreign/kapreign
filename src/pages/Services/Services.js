@@ -7,9 +7,10 @@ import Digimarket from "../../Assets/Images/Digimarket2.jpg";
 import MobAPP from "../../Assets/Images/mobapp.jpg";
 
 import Challenges from "../../Assets/Images/webapp.jpg";
+import Energy from "../../Assets/Images/Energy.svg";
 import DataBpo from "../../Assets/Images/DataBpo.jpg";
-import Futurestep from "../../Assets/Images/futurestep.jpg";
-import Solution from "../../Assets/Images/solution.jpg";
+import Futurestep from "../../Assets/Images/Retail2 1.svg";
+import Solution from "../../Assets/Images/education.svg";
 import "./Service.css";
 import AnimatedCard from "../../Components/AnimatedCard";
 import { useLocation } from "react-router-dom";
@@ -176,7 +177,7 @@ export default function Services({ children }) {
           <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-4 mt-10">
             <div>
               <h1 className="Caseheadinglarge"> Energy Solutions</h1>
-              <div className="alignpmargin">
+              <div className="">
                 Leverage our software development skills to optimize your energy
                 operations. We offer efficient technologies that cover a range
                 of needs from smart grid management to renewable energy
@@ -186,7 +187,7 @@ export default function Services({ children }) {
             </div>
             <div>
               <div style={{ textAlign: "center" }}>
-                <img className="CardImage" src={Challenges} alt="" />
+                <img className="CardImage" src={Energy} alt="" />
               </div>
             </div>
           </div>
@@ -198,15 +199,14 @@ export default function Services({ children }) {
               </div>
               <div
                 style={{
-                  textAlign: "center",
                   display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
+                  justifyContent: "left",
+                  alignItems: "left",
                   flexDirection: "column",
                 }}
               >
                 <h2 className="Caseheadinglarge">Education Expertise</h2>
-                <p className="alignpmargin Casesubheading">
+                <p className=" Casesubheading">
                   In the realm of education we are committed to revolutionizing
                   the learning experience. Our software solutions cater
                   specifically to the evolving needs of institutions by
@@ -223,7 +223,7 @@ export default function Services({ children }) {
           <div
             style={{ position: "relative", display: "flex", marginTop: "50px" }}
           >
-            <img className="CardImage" src={Futurestep} alt="" />
+            <img className="CardImage" style={{opacity:'0.3'}} src={Futurestep} alt="" />
             <div
               style={{ position: "absolute", alignSelf: "center" }}
               class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-4 mt-10 ml-10"
@@ -231,18 +231,18 @@ export default function Services({ children }) {
               <div>
                 <h2
                   className="Caseheadinglarge"
-                  style={{ textAlign: "center" }}
+                
                 >
                   Retail Reinvention
                 </h2>
-                <p className="alignpmargin ">
+                <p className=" ">
                   In the paced world of retail our software development prowess
                   takes stage. Elevate your operations with our solutions such,
                   as e commerce platforms and inventory management systems.
                   These cutting edge tools enhance customer experiences while
                   driving business growth.
                 </p>
-                <p className="alignpmargin ">
+                <p className=" ">
                   Here, at Kapreign our achievements are shaped by the success
                   stories we build with our clients. Take a look at our
                   portfolio. See for yourself how our expertise has

@@ -43,3 +43,9 @@
 .card-5 {
   background: radial-gradient(#f588d8, #c0a3e5);
 }
+.card__title{
+  /* font-weight: 900; */
+  font-size: 20px;
+  font-family: 'QUICK-BOLD';
+  line-height: 20px;
+}

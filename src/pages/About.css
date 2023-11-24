@@ -54,6 +54,8 @@
     font-weight: bold;
     color: #fff;
     font-family: 'QUICK-THIN';
+    text-align: left;
+    text-transform: capitalize;
   }
   
   /* Card details */

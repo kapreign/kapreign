@@ -7,6 +7,7 @@ import CaseStudy from "../pages/CaseStudy/CaseStudy";
 import CaseStudyDetailed from "../pages/CaseStudyDetails/CaseStudyDetails";
 import Services from "../pages/Services/Services";
 import Blog from "../pages/Blog/Blog";
+import ContactUs from "../pages/ContactUs/ContactUs";
 
 const ROUTES = {
   Home: {
@@ -91,6 +92,20 @@ const ROUTES = {
     hasTopNav: false,
     UserType: true,
     Component: Blog,
+    params: {},
+  },
+  ContactUs: {
+    path: "/contactUs",
+    key: "ContactUs",
+    name: "ContactUs",
+    exact: true,
+    isSecured: false,
+    hasMainNav: false,
+    hasSideNav: false,
+    listInSideNav: false,
+    hasTopNav: false,
+    UserType: true,
+    Component: ContactUs,
     params: {},
   },
 };

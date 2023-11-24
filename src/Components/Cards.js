@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import AnimatedCharacters from "./AnimatedText";
 // import ReactPlayer from "react-player";
 // import CardVideo from "../Assets/video/Mobileapp.mp4";
-import ReactPlayer from 'react-player'
+import ReactPlayer from "react-player";
 
 export default function Cards({
   title,
@@ -27,7 +27,7 @@ export default function Cards({
 
   // useEffect(() => {
   //   const video = videoRef.current;
-   
+
   //   if (scrollY == 200) {
   //     console.log(scrollY,"scrollY")
   //     video.play();
@@ -37,7 +37,7 @@ export default function Cards({
   const handleMouseEnter = () => {
     const video = videoRef.current;
     if (video) {
-      console.log("played")
+      console.log("played");
       video.play();
     }
   };
@@ -54,12 +54,12 @@ export default function Cards({
     {
       type: "heading1",
       text: title,
-      className: "card__title text-black font-bold text-xl m-2",
+      className: "card__title text-black   ",
     },
     {
       type: "heading1",
       text: subtitle,
-      className: "card__title text-black font-bold text-xl m-2",
+      className: "card__title text-black   ",
     },
   ];
 
@@ -88,8 +88,8 @@ export default function Cards({
         </a>
       </p> */}
       <div
-       onMouseEnter={handleMouseEnter} 
-      //  onMouseLeave={handleMouseLeave}
+        onMouseEnter={handleMouseEnter}
+        //  onMouseLeave={handleMouseLeave}
       >
         <video ref={videoRef} autoplay loop id={`video-${cardNo}`} muted>
           <source src={CardVideo} type="video/mp4"></source>
@@ -98,8 +98,15 @@ export default function Cards({
           <ReactPlayer style={{width:'200px'}} url={CardVideo} controls={false} loop={true} />
         </div> */}
         <div>
-          {/* <h2 className="card__title text-black font-bold text-xl">{title}</h2> */}
           <div className="m-2">
+            <div className="card__title ">
+              {title}
+            </div>
+            <div className="card__title ">
+              {subtitle}
+            </div>
+          </div>
+          {/* <div className="m-2">
             <motion.div
               className="App"
               initial="hidden"
@@ -112,13 +119,8 @@ export default function Cards({
                 })}
               </div>
             </motion.div>
-          </div>
+          </div> */}
           <div className="overflow-auto flex m-2">{technologies}</div>
-          <p className="card__apply text-gray text-sm">
-            <a className="card__link text-sm" href="https://wa.me/9497656243">
-              Contact us<i className="fas fa-arrow-right"></i>
-            </a>
-          </p>
         </div>
       </div>
       {/* </div> */}

@@ -1,5 +1,8 @@
 import React from "react";
 import { Icon } from "@iconify/react";
+import pinicon from "../Assets/Images/pin-map.svg"
+import mailicon from "../Assets/Images/mail.svg"
+import phoneicon from "../Assets/Images/phone-call.svg"
 
 export default function ContactUs({ theme }) {
   return (
@@ -22,12 +25,13 @@ export default function ContactUs({ theme }) {
               <div className="p-11 h-full text-center bg-black bg-opacity-90 md:border-r-4 border-indigo-500">
                 <div className="mb-6 relative mx-auto w-16 h-16 bg-black text-white  rounded-full">
                   <div className="absolute left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2">
-                    <Icon
+                    {/* <Icon
                       icon="system-uicons:mail"
                       height={50}
                       width={50}
                       classname="text-white hover:text-lightGray p-3 bg-white hover:bg-gray rounded-full"
-                    ></Icon>
+                    ></Icon> */}
+                      <img className="" src={mailicon} alt="mail"/> 
                   </div>
                 </div>
                 <h3 className="mb-3 text-xl font-bold font-heading leading-snug text-white">
@@ -45,12 +49,13 @@ export default function ContactUs({ theme }) {
               <div className="p-11 h-full text-center bg-black bg-opacity-90 md:border-r-4 shadow-11xl border-indigo-500">
                 <div className="mb-6 relative mx-auto w-16 h-16 bg-black text-white rounded-full">
                   <div className="absolute left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2">
-                    <Icon
+                    {/* <Icon
                       icon="ic:round-add-ic-call"
                       height={50}
                       width={50}
                       classname="text-white hover:text-lightGray p-3 bg-white hover:bg-gray rounded-full"
-                    ></Icon>
+                    ></Icon> */}
+                      <img className="" src={phoneicon} alt="phoneicon"/> 
                   </div>
                 </div>
                 <h3 className="mb-3 text-xl font-bold font-heading leading-snug text-white">
@@ -68,12 +73,13 @@ export default function ContactUs({ theme }) {
               <div className="p-11 h-full text-center bg-black bg-opacity-90 ">
                 <div className="mb-6 relative mx-auto w-16 h-16 bg-black">
                   <div className="absolute left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2">
-                    <Icon
+                    {/* <Icon
                       icon="material-symbols:add-location-alt-outline-rounded"
                       height={50}
                       width={50}
                       classname="bg-white"
-                    ></Icon>
+                    ></Icon> */}
+                    <img className="" src={pinicon} alt="address"/> 
                   </div>
                 </div>
                 <h3 className="mb-3 text-xl font-bold font-heading leading-snug text-white">

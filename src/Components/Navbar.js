@@ -38,7 +38,7 @@ export default function Navbar(props) {
               onClick={() => navigate("/caseStudy")}
               class="mr-5 font-bold leading-6 text-lightGray hover:text-gray"
             >
-              CaseStudy
+              Case Study
             </div>
             <div
               onClick={() => navigate("/services")}
@@ -56,12 +56,12 @@ export default function Navbar(props) {
         </div>
 
         <div className="inline-flex items-center ml-5 space-x-6 lg:justify-end">
-          <a
-            href="#"
+          <div
+            // onClick={() => navigate("/contactUs")}
             className="hidden lg:inline-flex lg:items-center lg:justify-center px-4 py-1.5 text-base font-medium leading-6 text-white whitespace-no-wrap bg-gray border border-lightGray rounded-full shadow-sm hover:bg-paleBlue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue"
           >
             Contact us
-          </a>
+          </div>
           <button
             onClick={props.changeTheme}
             className={`relative inline-flex items-center justify-between ml-8 px-2 pl-2 pr-2 py-2 overflow-hidden font-md text-sm 

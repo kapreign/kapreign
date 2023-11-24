@@ -63,7 +63,7 @@ export default function CaseStudy({ children }) {
     <div>
       <div
       //  className="example-container"
-       >
+      >
         {/* <Carousel Heading="Case Study" titlestyle="100" /> */}
         <TopBanner Heading="Case Study" titlestyle="100" />
       </div>
@@ -131,7 +131,7 @@ export default function CaseStudy({ children }) {
         <AboutCard
           photo={DE}
           cardPosition="left"
-          heading="Solar dashboard"
+          heading="Solar Dashboard"
           content="Illuminating insights - solar dashboard development.
           Kapreign embarked on a visionary project to develop a solar dashboard, an advanced
 monitoring and analytics platform. The objective was to empower users with real-time
@@ -150,7 +150,7 @@ revolutionize how users interact with and optimize their solar energy systems.
         <AboutCard
           photo={EV}
           cardPosition="left"
-          heading="EV charging app"
+          heading="EV Charging App"
           content="Kapreign took on the challenge of developing a cutting-edge electric vehicle (ev) charging
           app. The goal was to create a user-friendly and feature-rich application that seamlessly
           connects electric vehicle users with charging stations. Leveraging react for the front end and
@@ -168,12 +168,12 @@ revolutionize how users interact with and optimize their solar energy systems.
           photo={KAPCASE}
           cardPosition="left"
           heading="Kapstore"
-          content="Kapreign took on the challenge of developing a Billing Software Kapstore"
+          content="In the fast-paced world of retail, the need for efficient and reliable billing solutions is paramount. Kapstore, a cutting-edge billing software developed by Kapreign, emerges as a game-changer for supermarkets and kirana shops, addressing the complexities of day-to-day billing operations."
           animationCardVariants={animationCardVariants}
           scrollY={scrollY}
           limit={1700}
           path="/caseStudyView"
-          DetailedContent={jsonData[1]}
+          DetailedContent={jsonData[3]}
           readButton={true}
         />
       </div>
