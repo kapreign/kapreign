@@ -1,7 +1,8 @@
 import "./App.css";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import MainLayout from "./Layouts/WrapperLayout";
 import ROUTES from "./routes/routes";
+import { useEffect } from "react";
 
 function App() {
   const appRoutes = Object.keys(ROUTES).map((key) => {
@@ -15,6 +16,27 @@ function App() {
     return <MainLayout>{child}</MainLayout>;
   };
 
+  const ScrollToTop = () => {
+    const { pathname } = useLocation();
+  
+    useEffect(() => {
+      const hash = window.location.hash;
+      if (hash !== '') {
+        // If there's a hash in the URL, scroll to the element
+        const id = hash.replace('#', '');
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      } else {
+        // If there's no hash, scroll to the top of the page
+        window.scrollTo(0, 0);
+      }
+    }, [pathname]);
+  
+    return null;
+  };
+
   console.log(appRoutes, "appRoutes");
   return (
     <div className="App">
@@ -22,6 +44,7 @@ function App() {
       </MainLayout> */}
 
       <BrowserRouter>
+      <ScrollToTop/>
         <Routes>
           {appRoutes &&
             Object.keys(appRoutes).map((key) => {

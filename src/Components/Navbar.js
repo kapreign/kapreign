@@ -57,12 +57,12 @@ export default function Navbar(props) {
 
         <div className="inline-flex items-center ml-5 space-x-6 lg:justify-end">
           <div
-            // onClick={() => navigate("/contactUs")}
-            className="hidden lg:inline-flex lg:items-center lg:justify-center px-4 py-1.5 text-base font-medium leading-6 text-white whitespace-no-wrap bg-gray border border-lightGray rounded-full shadow-sm hover:bg-paleBlue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue"
+            onClick={() => navigate("/contactUs")}
+            className="hidden lg:inline-flex lg:items-center lg:justify-center px-4 py-1.5 text-base font-bold leading-6 text-lightGray whitespace-no-wrap bg-gray  shadow-sm hover:bg-darkBlue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue"
           >
             Contact us
           </div>
-          <button
+          {/* <button
             onClick={props.changeTheme}
             className={`relative inline-flex items-center justify-between ml-8 px-2 pl-2 pr-2 py-2 overflow-hidden font-md text-sm 
    rounded-full shadow-md group" ${
@@ -98,7 +98,7 @@ export default function Navbar(props) {
               bounce
               color="white"
             />
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

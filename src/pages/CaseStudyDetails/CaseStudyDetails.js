@@ -21,17 +21,21 @@ export default function CaseStudyDetailed({ children }) {
   const [scrollY, setScrollY] = useState(0);
 
   const location = useLocation();
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrollY(window.scrollY);
-    };
 
-    window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setScrollY(window.scrollY);
+  //   };
+
+  //   window.addEventListener("scroll", handleScroll);
+
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+
 
   const themeChanger = () => {
     setTheme(!theme);
@@ -58,7 +62,6 @@ export default function CaseStudyDetailed({ children }) {
     },
   };
   const Data = location?.state;
-  console.log(scrollY, "scrollY");
 
   const servicesText =
     Data?.DetailedContent?.CaseStudy?.ServicesProvided?.join(", ");

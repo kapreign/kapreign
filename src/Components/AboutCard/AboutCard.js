@@ -13,6 +13,7 @@ export default function AboutCard({
   path,
   DetailedContent,
   readButton,
+  ScrollReset,
 }) {
   const navigate = useNavigate();
   return (
@@ -36,14 +37,15 @@ export default function AboutCard({
                 <button
                   type="button"
                   class="text-white hover:text-blue border-2 border-white-800 hover:bg-white-800 focus:ring-4 focus:outline-none focus:ring-white-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-white-500 dark:text-white-500 dark:hover:text-white dark:hover:bg-white-600 dark:focus:ring-white-800 text-center inline-flex items-center "
-                  onClick={() =>
+                  onClick={() => (
                     navigate(path, {
                       state: {
                         heading: heading,
                         DetailedContent: DetailedContent,
                       },
-                    })
-                  }
+                    }),
+                    ScrollReset()
+                  )}
                 >
                   Read more
                   <svg

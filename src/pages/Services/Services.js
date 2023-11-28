@@ -76,9 +76,9 @@ export default function Services({ children }) {
     <div >
       <div>
         <TopBanner
-            Heading={"SERVICES"}
+            Heading={"Services"}
             subHead={Data?.DetailedContent?.CaseStudy?.Client}
-            titlestyle="50"
+            titlestyle="100"
         />
       </div>
       <div style={{ backgroundColor: "black" }}>
