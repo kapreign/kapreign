@@ -26,22 +26,22 @@ const BlogPosts = ({ currentPage, DetailedContent }) => {
       {currentPost && (
         <div>
           <div className="text-white-700 text-lg ">
-            <section className="columnStyle">
+            <div className="columnStyle">
               <h2 className="text-2xl font-bold mb-2 BlogHead">Introduction</h2>
               <p className="BlogSubheading">
                 {currentPost.content.Introduction}
               </p>
-            </section>
+            </div>
             {currentPost.content.Sections.map((section, index) => (
-              <section key={index} className="mt-4 columnStyle">
+              <div key={index} className="mt-4 columnStyle">
                 <h2 className="text-2xl font-bold mb-2 BlogHead">{section.title}</h2>
                 <p className="BlogSubheading">{section.content}</p>
-              </section>
+              </div>
             ))}
-            <section className="mt-4 columnStyle">
+            <div className="mt-4 columnStyle">
               <h2 className="text-2xl font-bold mb-2 BlogHead">Conclusion</h2>
               <p className="BlogSubheading">{currentPost.content.Conclusion}</p>
-            </section>
+            </div>
           </div>
         </div>
       )}
