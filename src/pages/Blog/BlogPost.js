@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import blogPostsData from "./blogPosts.json"; // Import the JSON data
-
+import "./BlogPost.css"
 const BlogPosts = ({ currentPage, DetailedContent }) => {
   const [currentPost, setCurrentPost] = useState(null);
 
@@ -25,28 +25,22 @@ const BlogPosts = ({ currentPage, DetailedContent }) => {
     <div className="">
       {currentPost && (
         <div>
-          {/* <h1
-            className="text-3xl font-bold mb-4 Caseheadinglarge"
-            style={{ textAlign: "center" }}
-          >
-            {currentPost.title}
-          </h1> */}
           <div className="text-white-700 text-lg ">
-            <section>
-              <h2 className="text-2xl font-bold mb-2">Introduction</h2>
-              <p className="Casesubheading">
+            <section className="columnStyle">
+              <h2 className="text-2xl font-bold mb-2 BlogHead">Introduction</h2>
+              <p className="BlogSubheading">
                 {currentPost.content.Introduction}
               </p>
             </section>
             {currentPost.content.Sections.map((section, index) => (
-              <section key={index} className="mt-4">
-                <h2 className="text-2xl font-bold mb-2">{section.title}</h2>
-                <p className="Casesubheading">{section.content}</p>
+              <section key={index} className="mt-4 columnStyle">
+                <h2 className="text-2xl font-bold mb-2 BlogHead">{section.title}</h2>
+                <p className="BlogSubheading">{section.content}</p>
               </section>
             ))}
-            <section className="mt-4">
-              <h2 className="text-2xl font-bold mb-2">Conclusion</h2>
-              <p className="Casesubheading">{currentPost.content.Conclusion}</p>
+            <section className="mt-4 columnStyle">
+              <h2 className="text-2xl font-bold mb-2 BlogHead">Conclusion</h2>
+              <p className="BlogSubheading">{currentPost.content.Conclusion}</p>
             </section>
           </div>
         </div>

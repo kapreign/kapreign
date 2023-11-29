@@ -94,7 +94,7 @@ export default function Services({ children }) {
                 >
                   <div>
                     <h2
-                      className="Caseheadinglarge"
+                      className="serviceHead"
                       style={{ textAlign: "center" }}
                     >
                       Web App Development
@@ -113,7 +113,7 @@ export default function Services({ children }) {
                 >
                   <div>
                     <h2
-                      className="Caseheadinglarge"
+                      className="serviceHead"
                       style={{ textAlign: "center" }}
                     >
                       Mobile App Development
@@ -132,7 +132,7 @@ export default function Services({ children }) {
                 >
                   <div>
                     <h2
-                      className="Caseheadinglarge"
+                      className="serviceHead"
                       style={{ textAlign: "center" }}
                     >
                       Digital Marketing
@@ -151,7 +151,7 @@ export default function Services({ children }) {
                 >
                   <div>
                     <h2
-                      className="Caseheadinglarge"
+                      className="serviceHead"
                       style={{ textAlign: "center" }}
                     >
                       Data Analysis/ BPO
@@ -176,8 +176,8 @@ export default function Services({ children }) {
 
           <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-4 mt-10">
             <div>
-              <h1 className="Caseheadinglarge"> Energy Solutions</h1>
-              <div className="">
+              <h1 className="serviceHead"> Energy Solutions</h1>
+              <div className="serviceSubHead">
                 Leverage our software development skills to optimize your energy
                 operations. We offer efficient technologies that cover a range
                 of needs from smart grid management to renewable energy
@@ -205,8 +205,8 @@ export default function Services({ children }) {
                   flexDirection: "column",
                 }}
               >
-                <h2 className="Caseheadinglarge">Education Expertise</h2>
-                <p className=" Casesubheading">
+                <h2 className="serviceHead">Education Expertise</h2>
+                <p className="serviceSubHead">
                   In the realm of education we are committed to revolutionizing
                   the learning experience. Our software solutions cater
                   specifically to the evolving needs of institutions by
@@ -230,19 +230,19 @@ export default function Services({ children }) {
             >
               <div>
                 <h2
-                  className="Caseheadinglarge"
+                  className="serviceHead"
                 
                 >
                   Retail Reinvention
                 </h2>
-                <p className=" ">
+                <p className="serviceSubHead">
                   In the paced world of retail our software development prowess
                   takes stage. Elevate your operations with our solutions such,
                   as e commerce platforms and inventory management systems.
                   These cutting edge tools enhance customer experiences while
                   driving business growth.
                 </p>
-                <p className=" ">
+                <p className="serviceSubHead ">
                   Here, at Kapreign our achievements are shaped by the success
                   stories we build with our clients. Take a look at our
                   portfolio. See for yourself how our expertise has

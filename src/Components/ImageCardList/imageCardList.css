@@ -4,3 +4,10 @@
     font-family: 'QUICK-THIN';
     line-height: 30px;
 }
+.paginationSubhead{
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'QUICK-THIN';
+    line-height: 16px;
+    color: white;
+}

@@ -25,7 +25,7 @@ const TopBanner = ({ Heading, titlestyle, subHead, BgImage }) => {
             width: `${titlestyle}%`,
             // textAlign: "center",
             justifyContent: "center",
-            // paddingLeft:'20px'
+            padding:'20px'
           }}
         >
           <h1 className="sm:text-3xl text-3xl md:text-5xl text-white">

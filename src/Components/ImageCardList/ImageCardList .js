@@ -81,7 +81,7 @@ const ImageCardList = ({ cards }) => {
               />
             </svg>
           </button>
-          <span className="text-gray-600">
+          <span className="text-gray-600 paginationSubhead">
             {`Page ${currentPage + 1} of ${totalPages}`}
           </span>
           <button
