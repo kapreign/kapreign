@@ -60,7 +60,8 @@ export default function Banr(props) {
                 }`}
               >
                 <h1 className="font-rale md:text-4xl text-2xl font-bold md:text-center text-left leading-tight sm:text-5xl sm:leading-tight lg:leading-tight lg:text-6xl font-pj">
-                  Created by Passion, Delivered with Profession.
+                  {/* Created by Passion, Delivered with Profession. */}
+                  Empowering Success in Your Digital Reign
                 </h1>
 
                 <motion.div
