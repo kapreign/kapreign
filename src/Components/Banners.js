@@ -1,4 +1,5 @@
 import avatar from "../Assets/Images/Person.webp";
+import "./Banners.css"
 export default function Banners(props) {
   const theme = props.theme;
 
@@ -22,8 +23,8 @@ export default function Banners(props) {
 
                 <div className="relative flex flex-col sm:flex-row sm:space-x-4 mt-8 sm:mt-10 justify-center">
                   <a
-                    href="https://wa.me/9497656243"
-                    className="flex items-center px-10 py-3 text-white bg-gray rounded-md hover:bg-lightGray hover:text-white"
+                    href="https://wa.me/7907226404"
+                    className="flex items-center px-10 py-3 text-white bg-gray rounded-md hover:bg-lightGray hover:text-white connectText"
                   >
                     Connect With Us
                   </a>

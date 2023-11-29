@@ -1,5 +1,4 @@
 import React from "react";
-
 import logo from "../Assets/Images/kap-logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
@@ -104,6 +103,7 @@ export default function Navbar(props) {
     </div>
   );
 }
+// eslint-disable-next-line no-lone-blocks
 {
   /* <button type="button" class="inline-flex p-2 text-black transition-all duration-200 rounded-md lg:hidden bg-gray hover:bg-gray">
     

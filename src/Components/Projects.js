@@ -144,9 +144,9 @@ export default function Projects(props) {
       // }}
     >
       <div className="container px-1 md:px-1 mx-auto sm:px-1 lg:px-1 flex items-center flex-col">
-        <h1 className="text-m font-bold tracking-wide text-center text-kap uppercase mb-7">
+        <div className="text-m font-bold tracking-wide text-center text-kap clientHead uppercase mb-7">
           our happy clients
-        </h1>
+        </div>
         <div   
         // style={{ backgroundImage: `url(${futuretree})` }}
         >
