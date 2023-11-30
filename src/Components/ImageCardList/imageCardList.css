@@ -1,13 +1,23 @@
 .Caseheadinglarge{
-    font-size: 30px;
+    font-size: 16px;
     font-weight: normal;
-    font-family: 'QUICK-THIN';
-    line-height: 30px;
+    font-family: 'QUICK-REG';
+    line-height: 16px;
+    text-align: start;
+    color: white;
 }
 .paginationSubhead{
     font-size: 16px;
     font-weight: normal;
     font-family: 'QUICK-THIN';
     line-height: 16px;
+    color: white;
+}
+.Blogsubheading{
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'QUICK-THIN';
+    line-height: 18px;
+    text-align: start;
     color: white;
 }

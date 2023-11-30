@@ -17,7 +17,7 @@ export default function Navbar(props) {
           <img
             src={logo}
             alt=""
-            className="h-6"
+            className="h-6 cursor-pointer"
             onClick={() => navigate("/home")}
           ></img>
           <nav className="hidden lg:flex lg:items-center lg:ml-auto text-base md:mb-0 md:pl-8 md:ml-8 md:border-l md:border-lightGray">
@@ -29,32 +29,32 @@ export default function Navbar(props) {
             </div> */}
             <div
               onClick={() => navigate("/about")}
-              class="mr-5 font-bold leading-6 text-lightGray hover:text-gray"
+              class="mr-5 font-bold leading-6 text-lightGray hover:text-gray cursor-pointer"
             >
               About Us
             </div>
             <div
               onClick={() => navigate("/caseStudy")}
-              class="mr-5 font-bold leading-6 text-lightGray hover:text-gray"
+              class="mr-5 font-bold leading-6 text-lightGray hover:text-gray cursor-pointer"
             >
               Case Study
             </div>
             <div
               onClick={() => navigate("/services")}
-              class="mr-5 font-bold leading-6 text-lightGray hover:text-gray"
+              class="mr-5 font-bold leading-6 text-lightGray hover:text-gray cursor-pointer"
             >
               Service
             </div>
             <div
               onClick={() => navigate("/blog")}
-              class="mr-5 font-bold leading-6 text-lightGray hover:text-gray"
+              class="mr-5 font-bold leading-6 text-lightGray hover:text-gray cursor-pointer"
             >
               Blog
             </div>
           </nav>
         </div>
 
-        <div className="inline-flex items-center ml-5 space-x-6 lg:justify-end">
+        <div className="inline-flex items-center ml-5 space-x-6 lg:justify-end cursor-pointer">
           <div
             onClick={() => navigate("/contactUs")}
             className="hidden lg:inline-flex lg:items-center lg:justify-center px-4 py-1.5 text-base font-bold leading-6 text-lightGray whitespace-no-wrap bg-gray  shadow-sm hover:bg-darkBlue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue"

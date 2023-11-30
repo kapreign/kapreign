@@ -3,16 +3,10 @@ import { useLocation } from "react-router-dom";
 import TopBanner from "../../Components/Topbanner/TopBanner";
 import BlogPosts from "../Blog/BlogPost";
 
-export default function BlogDetails({ key }) {
-  const [currentPage, setCurrentPage] = useState(1);
-  //   const blogPostsRef = useRef(null); // Reference to the blog posts section
+export default function BlogDetails() {
   const location = useLocation();
-  useEffect(() => {
-    setCurrentPage(key);
-  }, [key]);
 
   useEffect(() => {
-    console.log("scrolled top")
     window.scrollTo(0, 0); // Scrolls to the top of the page on component mount
   }, []);
 
@@ -28,7 +22,7 @@ export default function BlogDetails({ key }) {
         <div style={{ color: "white", textAlign: "left", padding: "50px" }}>
           <div className="mt-5 pt-5">
             <BlogPosts
-              currentPage={currentPage}
+              currentPage={location?.state?.index}
               DetailedContent={location?.state?.DetailedContent}
             />
           </div>

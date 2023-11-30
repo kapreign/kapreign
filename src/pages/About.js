@@ -176,7 +176,7 @@ export default function About() {
                     <li className="whykapText">
                       End-to-end software development services.
                     </li>
-                    <li>
+                    <li className="whykapText">
                       Extensive experience serving clients in the UAE and India.
                     </li>
                     <li className="whykapText">
