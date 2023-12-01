@@ -6,16 +6,19 @@ import ContactUs from "../../Components/ContactUs";
 import pinicon from "../../Assets/Images/pin-map.svg";
 import mailicon from "../../Assets/Images/mail.svg";
 import phoneicon from "../../Assets/Images/phone-call.svg";
+import SenderWidget from "./Senderwidget";
 
 export default function ContactUsMain() {
   return (
-    <div style={{ height: "500px", backgroundColor: "black" }}>
+    <div style={{ backgroundColor: "black" }}>
       <TopBanner
         Heading={"Contact Us"}
         subHead={"Get in Touch With Us Today and Let Us Help You"}
         titlestyle="100"
         BgImage={ContactImg}
       />
+
+      <SenderWidget />
       <div className="relative pt-24 pb-36 bg-white overflow-hidden bg-blacked">
         <div className="relative z-10 container px-4 mx-auto">
           <div className="flex flex-wrap -m-3">
