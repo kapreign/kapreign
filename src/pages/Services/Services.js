@@ -4,9 +4,9 @@ import Carousel from "../../Components/Carousel";
 import AboutCard from "../../Components/AboutCard/AboutCard";
 import vision from "../../Assets/Images/vision.svg";
 import Digimarket from "../../Assets/Images/Digimarket2.jpg";
-import MobAPP from "../../Assets/Images/mobapp.jpg";
+import MobAPP from "../../Assets/Images/mob app.svg";
 
-import Challenges from "../../Assets/Images/webapp.jpg";
+import WebappDev from "../../Assets/Images/web app.svg";
 import Energy from "../../Assets/Images/Energy.svg";
 import DataBpo from "../../Assets/Images/DataBpo.jpg";
 import Futurestep from "../../Assets/Images/Retail2 1.svg";
@@ -68,35 +68,29 @@ export default function Services({ children }) {
     "We are an IT Software Development firm that specializes in providing state of the art solutions tailored to the requirements of the Energy,",
     " Education and Retail sectors. Our unwavering dedication to advancements and deep understanding of these industries enables us to achieve transformative results for businesses.",
   ];
-  const words = content;
-  const sampleText = 'Highlight text word by word using Framer Motion in React.js';
 
 
   return (
-    <div >
+    <div>
       <div>
         <TopBanner
-            Heading={"Services"}
-            subHead={Data?.DetailedContent?.CaseStudy?.Client}
-            titlestyle="100"
+          Heading={"Services"}
+          subHead={Data?.DetailedContent?.CaseStudy?.Client}
+          titlestyle="100"
         />
       </div>
       <div style={{ backgroundColor: "black" }}>
-
         <div style={{ color: "white", textAlign: "left", padding: "50px" }}>
           <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-8">
             <div>
               <div style={{ position: "relative", display: "flex" }}>
-                <img className="CardImage" src={Challenges} alt="" />
+                <img className="CardImage" src={WebappDev} alt="WebappDev" />
                 <div
                   style={{ position: "absolute", alignSelf: "center" }}
                   class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1  gap-4 mt-10 ml-10"
                 >
                   <div>
-                    <h2
-                      className="serviceHead"
-                      style={{ textAlign: "center" }}
-                    >
+                    <h2 className="serviceHead" style={{ textAlign: "center" }}>
                       Web App Development
                     </h2>
                   </div>
@@ -106,16 +100,13 @@ export default function Services({ children }) {
 
             <div>
               <div style={{ position: "relative", display: "flex" }}>
-                <img className="CardImage" src={MobAPP} alt="" />
+                <img className="CardImage" src={MobAPP} alt="MobAPP" />
                 <div
                   style={{ position: "absolute", alignSelf: "center" }}
                   class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1  gap-4 mt-10 ml-10"
                 >
                   <div>
-                    <h2
-                      className="serviceHead"
-                      style={{ textAlign: "center" }}
-                    >
+                    <h2 className="serviceHead" style={{ textAlign: "center" }}>
                       Mobile App Development
                     </h2>
                   </div>
@@ -131,10 +122,7 @@ export default function Services({ children }) {
                   class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1  gap-4 mt-10 ml-10"
                 >
                   <div>
-                    <h2
-                      className="serviceHead"
-                      style={{ textAlign: "center" }}
-                    >
+                    <h2 className="serviceHead" style={{ textAlign: "center" }}>
                       Digital Marketing
                     </h2>
                   </div>
@@ -150,10 +138,7 @@ export default function Services({ children }) {
                   class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1  gap-4 mt-10 ml-10"
                 >
                   <div>
-                    <h2
-                      className="serviceHead"
-                      style={{ textAlign: "center" }}
-                    >
+                    <h2 className="serviceHead" style={{ textAlign: "center" }}>
                       Data Analysis/ BPO
                     </h2>
                   </div>
@@ -173,6 +158,8 @@ export default function Services({ children }) {
               <MultiLayerParallax Heading="KAPREIGN" />
             </div>
           </div>
+
+          <div className="w-full flext text-center serviceHead mt-5 mb-g">We are Expert In</div>
 
           <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-4 mt-10">
             <div>
@@ -223,18 +210,18 @@ export default function Services({ children }) {
           <div
             style={{ position: "relative", display: "flex", marginTop: "50px" }}
           >
-            <img className="CardImage" style={{opacity:'0.3'}} src={Futurestep} alt="" />
+            <img
+              className="CardImage"
+              style={{ opacity: "0.3" }}
+              src={Futurestep}
+              alt=""
+            />
             <div
               style={{ position: "absolute", alignSelf: "center" }}
               class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-4 mt-10 ml-10"
             >
               <div>
-                <h2
-                  className="serviceHead"
-                
-                >
-                  Retail Reinvention
-                </h2>
+                <h2 className="serviceHead">Retail Reinvention</h2>
                 <p className="serviceSubHead">
                   In the paced world of retail our software development prowess
                   takes stage. Elevate your operations with our solutions such,

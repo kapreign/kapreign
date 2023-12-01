@@ -141,7 +141,7 @@ revolutionize how users interact with and optimize their solar energy systems.
           "
           animationCardVariants={animationCardVariants}
           scrollY={scrollY}
-          limit={700}
+          limit={500}
           path="/caseStudyView"
           DetailedContent={jsonData[1]}
           readButton={true}
@@ -158,7 +158,7 @@ revolutionize how users interact with and optimize their solar energy systems.
           electric vehicle owners."
           animationCardVariants={animationCardVariants}
           scrollY={scrollY}
-          limit={1200}
+          limit={700}
           path="/caseStudyView"
           DetailedContent={jsonData[2]}
           readButton={true}
@@ -171,7 +171,7 @@ revolutionize how users interact with and optimize their solar energy systems.
           content="In the fast-paced world of retail, the need for efficient and reliable billing solutions is paramount. Kapstore, a cutting-edge billing software developed by Kapreign, emerges as a game-changer for supermarkets and kirana shops, addressing the complexities of day-to-day billing operations."
           animationCardVariants={animationCardVariants}
           scrollY={scrollY}
-          limit={1700}
+          limit={900}
           path="/caseStudyView"
           DetailedContent={jsonData[3]}
           readButton={true}

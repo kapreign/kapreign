@@ -74,7 +74,7 @@ export default function CaseStudyDetailed({ children }) {
       <div>
         <TopBanner
           Heading={location?.state?.heading}
-          subHead={Data?.DetailedContent?.CaseStudy?.Client}
+          // subHead={Data?.DetailedContent?.CaseStudy?.Client}
           titlestyle="60"
         />
       </div>
@@ -114,7 +114,7 @@ export default function CaseStudyDetailed({ children }) {
               </div>
             </div>
             <div>
-              <h2 className="Caseheadinglarge">
+              <h2 className="Caseheading">
                 {Data?.DetailedContent?.CaseStudy?.Client}
               </h2>
               <h2 className="CasesPara">{Data?.DetailedContent?.Overview}</h2>
@@ -131,7 +131,7 @@ export default function CaseStudyDetailed({ children }) {
 
           <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-4 mt-10">
             <div>
-              <h1 className="Caseheadinglarge"> Challenges</h1>
+              <div className="Caseheading">Challenges</div>
               <ul className="">
                 {Data?.DetailedContent?.Challenges.map((data) => (
                   <div className="CasesPara">{data}</div>
@@ -146,9 +146,9 @@ export default function CaseStudyDetailed({ children }) {
           </div>
 
           <div>
-            <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-4 mt-10">
+            <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-4 mt-10 mb-10">
               <div>
-                <img className="CardImage" src={Solution} alt="" />
+                <img className="CardImage" src={Data?.photo} alt="" />
               </div>
               <div
                 style={{
@@ -159,13 +159,13 @@ export default function CaseStudyDetailed({ children }) {
                   flexDirection: "column",
                 }}
               >
-                <h2 className="Caseheadinglarge">Solution</h2>
+                <h2 className="Caseheading">Solution</h2>
                 <p className="  CasesPara">{Data?.DetailedContent?.Solution}</p>
               </div>
             </div>
           </div>
 
-          <h2 className="Caseheadinglarge" style={{ textAlign: "center" }}>
+          <h2 className="Caseheading" style={{ textAlign: "center" }}>
             Key Features
           </h2>
 
@@ -186,7 +186,7 @@ export default function CaseStudyDetailed({ children }) {
             >
               <div>
                 <h2
-                  className="Caseheadinglarge"
+                  className="Caseheading"
                   // style={{ textAlign: "center" }}
                 >
                   Future Steps
@@ -199,7 +199,7 @@ export default function CaseStudyDetailed({ children }) {
             </div>
           </div>
 
-          <h2 className="Caseheadinglarge">Conclusion</h2>
+          <h2 className="Caseheading">Conclusion</h2>
           <p className=" CasesPara"> {Data?.DetailedContent?.Conclusion}</p>
         </div>
       </div>
