@@ -18,7 +18,7 @@ export default function Navbar(props) {
             src={logo}
             alt=""
             className="h-6 cursor-pointer"
-            onClick={() => navigate("/home")}
+            onClick={() => navigate("/")}
           ></img>
           <nav className="hidden lg:flex lg:items-center lg:ml-auto text-base md:mb-0 md:pl-8 md:ml-8 md:border-l md:border-lightGray">
             {/* <div

@@ -12,7 +12,7 @@ import BlogDetails from "../pages/BlogDetails/BlogDetails";
 
 const ROUTES = {
   Home: {
-    path: "/home",
+    path: "/",
     key: "Home",
     name: "Home",
     exact: true,
