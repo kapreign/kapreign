@@ -14,6 +14,7 @@ import "./CaseStudy.css";
 import AnimatedCard from "../../Components/AnimatedCard";
 import jsonData from "./content.json";
 import TopBanner from "../../Components/Topbanner/TopBanner";
+import CaseStudyImg from "../../Assets/Images/casestudy.svg"
 
 export default function CaseStudy({ children }) {
   const [theme, setTheme] = useState(true);
@@ -57,7 +58,7 @@ export default function CaseStudy({ children }) {
     },
   };
 
-  console.log(scrollY, "scrollY");
+  // console.log(scrollY, "scrollY");
 
   return (
     <div>
@@ -65,7 +66,7 @@ export default function CaseStudy({ children }) {
       //  className="example-container"
       >
         {/* <Carousel Heading="Case Study" titlestyle="100" /> */}
-        <TopBanner Heading="Case Study" titlestyle="100" />
+        <TopBanner Heading="Case Study" titlestyle="100" BgImage={CaseStudyImg}/>
       </div>
       <div style={{ backgroundColor: "black" }}>
         {/* <AnimatedCard

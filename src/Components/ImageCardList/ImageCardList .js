@@ -26,17 +26,18 @@ const ImageCard = ({
       behavior: 'smooth' // You can change this to 'auto' for an instant scroll
     });
   };
+  
 
   return (
     <div
-      className=" w-full md:w-1/3 lg:w-1/3 xl:w-1/3 p-8 h-80 cursor-pointer "
+      className=" w-full md:w-1/3 lg:w-1/3 xl:w-1/3 p-8 h-90 cursor-pointer "
       onClick={() => handleCardClick()}
     >
       <div className=" h-3/4 overflow-hidden  shadow-md  ">
         <img
           src={require(`../../${image}`)}
           alt="Card"
-          className="w-full opacity-50"
+          className="w-full "
         />
       </div>
       <div className="flex justify-between pt-2 mb-4">

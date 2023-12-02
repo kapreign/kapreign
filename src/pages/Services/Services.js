@@ -17,6 +17,8 @@ import { useLocation } from "react-router-dom";
 import MultiLayerParallax from "../../Components/MultilayerParallax/multilayerParalax";
 import TextColorAnimation from "../../Components/ScrollText/ScrollText";
 import TopBanner from "../../Components/Topbanner/TopBanner";
+import ServiceCard from "./ServiceCard";
+import ServiceImg from "../../Assets/Images/service.svg"
 
 export default function Services({ children }) {
   const [theme, setTheme] = useState(true);
@@ -77,75 +79,13 @@ export default function Services({ children }) {
           Heading={"Services"}
           subHead={Data?.DetailedContent?.CaseStudy?.Client}
           titlestyle="100"
+          BgImage={ServiceImg}
         />
       </div>
       <div style={{ backgroundColor: "black" }}>
         <div style={{ color: "white", textAlign: "left", padding: "50px" }}>
-          <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-8">
-            <div>
-              <div style={{ position: "relative", display: "flex" }}>
-                <img className="CardImage" src={WebappDev} alt="WebappDev" />
-                <div
-                  style={{ position: "absolute", alignSelf: "center" }}
-                  class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1  gap-4 mt-10 ml-10"
-                >
-                  <div>
-                    <h2 className="serviceHead" style={{ textAlign: "center" }}>
-                      Web App Development
-                    </h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <div style={{ position: "relative", display: "flex" }}>
-                <img className="CardImage" src={MobAPP} alt="MobAPP" />
-                <div
-                  style={{ position: "absolute", alignSelf: "center" }}
-                  class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1  gap-4 mt-10 ml-10"
-                >
-                  <div>
-                    <h2 className="serviceHead" style={{ textAlign: "center" }}>
-                      Mobile App Development
-                    </h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <div style={{ position: "relative", display: "flex" }}>
-                <img className="CardImage" src={Digimarket} alt="" />
-                <div
-                  style={{ position: "absolute", alignSelf: "center" }}
-                  class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1  gap-4 mt-10 ml-10"
-                >
-                  <div>
-                    <h2 className="serviceHead" style={{ textAlign: "center" }}>
-                      Digital Marketing
-                    </h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div>
-              <div style={{ position: "relative", display: "flex" }}>
-                <img className="CardImage" src={DataBpo} alt="" />
-                <div
-                  style={{ position: "absolute", alignSelf: "center" }}
-                  class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1  gap-4 mt-10 ml-10"
-                >
-                  <div>
-                    <h2 className="serviceHead" style={{ textAlign: "center" }}>
-                      Data Analysis/ BPO
-                    </h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <ServiceCard/>
+         
           <div>
             {/* <ScrollText content={sampleText} /> */}
             {/* <TextColorAnimation content={sampleText}/> */}

@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import TopBanner from "../../Components/Topbanner/TopBanner";
 import BlogPosts from "../Blog/BlogPost";
 
+
 export default function BlogDetails() {
   const location = useLocation();
 
@@ -10,12 +11,14 @@ export default function BlogDetails() {
     window.scrollTo(0, 0); // Scrolls to the top of the page on component mount
   }, []);
 
+  console.log("dddddddddd",location?.state?.DetailedContent?.image)
   return (
     <div style={{ backgroundColor: "black" }}>
       <div>
         <TopBanner
           Heading={location?.state?.DetailedContent?.title}
           titlestyle="100"
+          // BgImage={location?.state?.DetailedContent?.image}
         />
       </div>
       <div style={{ backgroundColor: "black" }}>

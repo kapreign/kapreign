@@ -5,6 +5,9 @@ import image2 from "../../Assets/Images/team carousel.jpg";
 import "../Carousel.css";
 
 const TopBanner = ({ Heading, titlestyle, subHead, BgImage }) => {
+
+  // const imagePath = require(`../../${BgImage}`);
+  // console.log(BgImage,"BgImage",imagePath)
   return (
     <>
       <div
