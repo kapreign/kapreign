@@ -11,6 +11,7 @@ import Banr from "../Components/Banr";
 import Navmob from "../Components/Navmob";
 import options from "../Components/Particles";
 import ContactUs from "../Components/ContactUs";
+import routes from "../routes/routes"
 
 export default function Home({ children }) {
   const [theme, setTheme] = useState(true);
@@ -18,6 +19,26 @@ export default function Home({ children }) {
   const themeChanger = () => {
     setTheme(!theme);
   };
+
+
+  // function generateSitemap(routes) {
+  //   const hostname = 'https://kapreign.com/'; // Replace with your domain
+  
+  //   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+  //   xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+  
+  //   Object.values(routes).forEach((route) => {
+  //     const { path } = route;
+  //     const url = `${hostname}${path}`;
+  //     xml += `<url><loc>${url}</loc></url>\n`;
+  //   });
+  
+  //   xml += '</urlset>';
+  //   return xml;
+  // }
+  
+  // const sitemap = generateSitemap(routes);
+  // console.log(sitemap,"sitemap"); 
 
   const particlesInit = async (main) => {
     await loadFull(main);
