@@ -57,7 +57,7 @@ export default function Navbar(props) {
         <div className="inline-flex items-center ml-5 space-x-6 lg:justify-end cursor-pointer">
           <div
             onClick={() => navigate("/contactUs")}
-            className="hidden lg:inline-flex lg:items-center lg:justify-center px-4 py-1.5 text-base font-bold leading-6 text-lightGray whitespace-no-wrap bg-gray  shadow-sm hover:bg-darkBlue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue"
+            className="hidden lg:inline-flex lg:items-center lg:justify-center px-4 py-1.5 text-base font-bold leading-6 text-white whitespace-no-wrap bg-kapblue  shadow-sm hover:bg-darkBlue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue  rounded-md"
           >
             Contact us
           </div>

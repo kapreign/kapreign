@@ -23,7 +23,8 @@ module.exports = {
       lightBlack:"#191919",
       blaack:"#2C2C2C",
       blacked:"#000000",
-      dimBlack:"#000000f5"
+      dimBlack:"#000000f5",
+      kapblue:'#007cfb'
     },
     borderWidth: {
       DEFAULT: "1px",

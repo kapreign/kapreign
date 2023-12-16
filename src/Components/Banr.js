@@ -79,7 +79,7 @@ export default function Banr(props) {
                 <div class="relative flex flex-col sm:flex-row sm:space-x-4 mt-8 sm:mt-10 justify-center">
                   <a
                     href="https://wa.me/7907226404"
-                    class="flex items-center w-full px-10 z-50 py-3 mb-3 text-lg text-white bg-blue rounded-md sm:mb-0 hover:bg-lightBlue sm:w-auto"
+                    class="flex items-center w-full px-10 z-50 py-3 mb-3 text-lg text-white bg-blue rounded-md sm:mb-0 hover:bg-kapblue sm:w-auto"
                   >
                     Contact us
                   </a>
