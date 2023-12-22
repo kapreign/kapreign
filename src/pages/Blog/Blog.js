@@ -9,8 +9,10 @@ export default function Blog() {
   return (
     <div style={{ backgroundColor: "black" }}>
       <div>
-        <TopBanner Heading="Blog" titlestyle="100"  
+        <TopBanner Heading="Blog" 
+        titlestyle="100"  
         BgImage={BlogImg}
+        SideHead={false}
         />
       </div>
       <div className="container mx-auto py-8">

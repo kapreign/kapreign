@@ -74,6 +74,7 @@ export default function CaseStudyDetailed({ children }) {
       <div>
         <TopBanner
           Heading={location?.state?.heading}
+          SideHead={false}
           // subHead={Data?.DetailedContent?.CaseStudy?.Client}
           titlestyle="60"
         />

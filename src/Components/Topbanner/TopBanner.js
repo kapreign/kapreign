@@ -4,8 +4,7 @@ import image from "../../Assets/Images/aboutuscarousel.jpg";
 import image2 from "../../Assets/Images/team carousel.jpg";
 import "../Carousel.css";
 
-const TopBanner = ({ Heading, titlestyle, subHead, BgImage }) => {
-
+const TopBanner = ({ Heading, titlestyle, subHead, BgImage, SideHead }) => {
   // const imagePath = require(`../../${BgImage}`);
   // console.log(BgImage,"BgImage",imagePath)
   return (
@@ -21,17 +20,24 @@ const TopBanner = ({ Heading, titlestyle, subHead, BgImage }) => {
         <div
           // className={`text-center  `}
           style={{
-            display: "flex",
-            alignItems: "center",
+            // display: "flex",
+            // alignItems: "center",
             height: "100%",
             position: "relative",
             width: `${titlestyle}%`,
             // textAlign: "center",
-            justifyContent: "center",
-            padding:'20px'
+            // justifyContent: SideHead ? "end" : "center",
+            // padding: "20px",
           }}
+          className={`${SideHead ? " flex sm:justify-center md:justify-end lg:justify-end  sm:items-end md:items-center lg:items-center " : " flex justify-center items-center"}`}
         >
-          <h1 className="sm:text-3xl text-3xl md:text-5xl text-white">
+          <h1
+            className={` ${
+              SideHead
+                ? "sm:text-xl text-xl md:text-xl text-white md:mr-20"
+                : "sm:text-3xl text-3xl md:text-5xl text-white"
+            }   `}
+          >
             {Heading}
           </h1>
           {subHead && (
@@ -41,7 +47,6 @@ const TopBanner = ({ Heading, titlestyle, subHead, BgImage }) => {
                 bottom: 20,
                 fontSize: "16px",
                 color: "white",
-                
               }}
             >
               {subHead}

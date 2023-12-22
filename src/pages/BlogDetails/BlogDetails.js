@@ -18,6 +18,7 @@ export default function BlogDetails() {
         <TopBanner
           Heading={location?.state?.DetailedContent?.title}
           titlestyle="100"
+          SideHead={false}
           // BgImage={location?.state?.DetailedContent?.image}
         />
       </div>

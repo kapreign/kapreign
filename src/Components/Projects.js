@@ -13,6 +13,7 @@ import science from "../Assets/Images/sx.svg";
 import quro from "../Assets/Images/quro.svg";
 import buildingBG from "../Assets/Images/buildingBG.jpg";
 import futuretree from "../Assets/Images/futureblue.jpg";
+import worldmapImg from "../Assets/Images/clients-background.webp";
 
 
 import { useTransform, useScroll, motion } from "framer-motion";
@@ -155,7 +156,7 @@ export default function Projects(props) {
             ref={gallery}
             className="gallery"
             // style={{position:'absolute'}}
-            style={{ backgroundImage: `url(${futuretree})`, backgroundSize:'cover' }}
+            style={{ backgroundImage: `url(${worldmapImg})`, backgroundSize:'cover' }}
           >
              {/* <div class="shade"></div> */}
            

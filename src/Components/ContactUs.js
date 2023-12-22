@@ -15,15 +15,15 @@ export default function ContactUs({ theme }) {
       >
         {/* <img className="absolute bottom-0 left-1/2 transform -translate-x-1/2" src="flaro-assets/images/contact/gradient.svg" alt=""/> */}
         <div className="relative z-10 container px-4 mx-auto">
-          <h2 className="mb-5 text-6xl md:text-8xl xl:text-10xl text-white dark:text-lightGray text-center font-bold font-heading tracking-px-n leading-none connectedHead">
-            Get connected
-          </h2>
+          <div className="mb-5 sm:text-5xl md:text-8xl xl:text-10xl text-white dark:text-lightGray text-center font-bold font-heading tracking-px-n leading-none ">
+            Get connected 
+          </div>
           <p className="mb-20 text-lg text-white dark:text-lightGray text-center font-medium leading-normal md:max-w-lg mx-auto connectedSubHead">
             We're here for you, get connected!
           </p>
-          <div className="flex flex-wrap -m-3">
-            <div className="w-full md:w-1/3 p-3">
-              <div className="p-11 h-full text-center bg-black bg-opacity-90 md:border-r-4 border-indigo-500">
+          <div className="   grid gap-4 sm:grid-cols-1 md:grid-cols-3 drop-shadow-3xl">
+            <div className="w-full     ">
+              <div className="p-11 h-full text-center rounded-xl  bg-black bg-opacity-90 ">
                 <div className="mb-6 relative mx-auto w-16 h-16 bg-black text-white  rounded-full">
                   <div className="absolute left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2">
                     {/* <Icon
@@ -43,8 +43,8 @@ export default function ContactUs({ theme }) {
                 </p>
               </div>
             </div>
-            <div className="w-full md:w-1/3 p-3">
-              <div className="p-11 h-full text-center bg-black bg-opacity-90 md:border-r-4 shadow-11xl border-indigo-500">
+            <div className="w-full    ">
+              <div className="p-11 h-full rounded-xl text-center bg-black bg-opacity-90  shadow-11xl">
                 <div className="mb-6 relative mx-auto w-16 h-16 bg-black text-white rounded-full">
                   <div className="absolute left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2">
                     <img className="" src={phoneicon} alt="phoneicon" />
@@ -61,8 +61,8 @@ export default function ContactUs({ theme }) {
                 </p>
               </div>
             </div>
-            <div className="w-full md:w-1/3 p-3">
-              <div className="p-11 h-full text-center bg-black bg-opacity-90 ">
+            <div className="w-full    ">
+              <div className="p-11 h-full rounded-xl text-center bg-black bg-opacity-90 ">
                 <div className="mb-6 relative mx-auto w-16 h-16 bg-black">
                   <div className="absolute left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2">
                     <img className="" src={pinicon} alt="address" />

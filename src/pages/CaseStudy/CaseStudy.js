@@ -66,7 +66,9 @@ export default function CaseStudy({ children }) {
       //  className="example-container"
       >
         {/* <Carousel Heading="Case Study" titlestyle="100" /> */}
-        <TopBanner Heading="Case Study" titlestyle="100" BgImage={CaseStudyImg}/>
+        <TopBanner Heading="Case Study" titlestyle="100"
+         SideHead={false}
+        BgImage={CaseStudyImg}/>
       </div>
       <div style={{ backgroundColor: "black" }}>
         {/* <AnimatedCard

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import FreshdeskWidget from "./FreshdeskWidget";
 import TopBanner from "../../Components/Topbanner/TopBanner";
-import ContactImg from "../../Assets/Images/contact.jpg";
+import ContactImg from "../../Assets/Images/contactus1.svg";
 import ContactUs from "../../Components/ContactUs";
 import pinicon from "../../Assets/Images/pin-map.svg";
 import mailicon from "../../Assets/Images/mail.svg";
@@ -12,9 +12,10 @@ export default function ContactUsMain() {
   return (
     <div style={{ backgroundColor: "black" }}>
       <TopBanner
-        Heading={"Contact Us"}
-        subHead={"Get in Touch With Us Today and Let Us Help You"}
+        Heading={"Get in touch with us today and Let us help you !"}
+        subHead={""}
         titlestyle="100"
+        SideHead={true}
         BgImage={ContactImg}
       />
 

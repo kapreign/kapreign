@@ -1,8 +1,10 @@
 import logo from "../Assets/Images/kap-logo.png";
-import instagramImg from "../Assets/Images/instagram.png";
-import FacebookImg from "../Assets/Images/facebook.png";
-import whatsappImg from "../Assets/Images/whatsapp.png";
-import linkedinImg from "../Assets/Images/linkedin.png";
+import instagramImg from "../Assets/Images/sc4.svg";
+import FacebookImg from "../Assets/Images/sc1.svg";
+import whatsappImg from "../Assets/Images/sc3.svg";
+import linkedinImg from "../Assets/Images/sc2.svg";
+import Atchivementimg from "../Assets/Images/achievements.webp";
+import SdgImg from "../Assets/Images//SDG.webp";
 export default function Footer(props) {
   const theme = props.theme;
 
@@ -15,7 +17,7 @@ export default function Footer(props) {
       <hr className="my-6 border-lightGray sm:mx-auto dark:border-gray lg:my-8" />
 
       <div className="grid sm:grid-cols-1  md:grid-cols-5 gap-2 flex ">
-        <div className="flex md:items-start sm:items-center flex-col col-span-2  ">
+        <div className="flex md:items-start sm:items-center flex-col md:col-span-2  ">
           <a href="https://Kapreign.com/">
             <img src={logo} alt="Kapreign Logo" />
           </a>
@@ -53,6 +55,10 @@ export default function Footer(props) {
           </span>
           <div className=" md:text-sm sm:text-xl text-lightGray sm:text-center md:ml-6 mt-2 sm:ml-0">
             Privacy policy | Terms of service
+          </div>
+          <div className="flex md:ml-6 mt-2 sm:ml-0 ">
+            <img src={Atchivementimg} alt="Atchivementimg" className="w-40 mr-4" />
+            <img src={SdgImg} alt="SdgImg" className="w-28" />
           </div>
         </div>
 
@@ -154,6 +160,11 @@ export default function Footer(props) {
             <li className="md:text-sm sm:text-xl">+91 9746574532</li>
             <li className="md:text-sm sm:text-xl">+91 7907226404</li>
             <li className="md:text-sm sm:text-xl">info@kapreign.com</li>
+
+            <li className="md:text-sm sm:text-xl font-bold text-white mt-2 ">
+              Support Center
+            </li>
+            <a href="https://kapreign.freshdesk.com/support/login" className="md:text-sm sm:text-xl cursor-pointer">Raise a Ticket</a>
           </ul>
         </div>
       </div>

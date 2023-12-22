@@ -1,21 +1,10 @@
 import React, { useState, useEffect } from "react";
-import { loadFull } from "tsparticles";
-import Carousel from "../../Components/Carousel";
-import AboutCard from "../../Components/AboutCard/AboutCard";
-import vision from "../../Assets/Images/vision.svg";
-import Digimarket from "../../Assets/Images/Digimarket2.jpg";
-import MobAPP from "../../Assets/Images/mob app.svg";
-
-import WebappDev from "../../Assets/Images/web app.svg";
 import Energy from "../../Assets/Images/Energy.svg";
-import DataBpo from "../../Assets/Images/DataBpo.jpg";
 import Futurestep from "../../Assets/Images/Retail2 1.svg";
 import Solution from "../../Assets/Images/education.svg";
 import "./Service.css";
-import AnimatedCard from "../../Components/AnimatedCard";
 import { useLocation } from "react-router-dom";
 import MultiLayerParallax from "../../Components/MultilayerParallax/multilayerParalax";
-import TextColorAnimation from "../../Components/ScrollText/ScrollText";
 import TopBanner from "../../Components/Topbanner/TopBanner";
 import ServiceCard from "./ServiceCard";
 import ServiceImg from "../../Assets/Images/service.svg"
@@ -80,6 +69,7 @@ export default function Services({ children }) {
           subHead={Data?.DetailedContent?.CaseStudy?.Client}
           titlestyle="100"
           BgImage={ServiceImg}
+          SideHead={false}
         />
       </div>
       <div style={{ backgroundColor: "black" }}>

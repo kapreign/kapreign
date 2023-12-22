@@ -1,9 +1,9 @@
 import React from "react";
 // import { useNavigate } from "react-router-dom";
-import WebappDev from "../../Assets/Images/web app.svg";
-import Digimarket from "../../Assets/Images/Digimarket2.jpg";
-import MobAPP from "../../Assets/Images/mob app.svg";
-import DataBpo from "../../Assets/Images/DataBpo.jpg";
+import WebappDev from "../../Assets/Images/ser_web1.webp";
+import Digimarket from "../../Assets/Images/ser_dm3.webp";
+import MobAPP from "../../Assets/Images/ser_mobapp2.webp";
+import DataBpo from "../../Assets/Images/ser_data4.webp";
 export default function ServiceCard() {
   //   const navigate = useNavigate();
 

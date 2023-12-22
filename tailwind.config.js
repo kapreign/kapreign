@@ -35,7 +35,16 @@ module.exports = {
       6: "6px",
       8: "8px",
     },
-    extend: {},
+    extend: {
+      dropShadow: {
+        '3xl': '0px 0px 85px rgba(0,126,255,0.3)',
+        '4xl': [
+            '0 35px 35px rgb(0 126 255)',
+            '0 45px 65px rgb(0 126 255)'
+        ]
+      }
+
+    },
     fontFamily: {
       quick: ["QUICK"],
       quickB: ["QUICK-BOLD"],
