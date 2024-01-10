@@ -171,7 +171,7 @@ export default function Landing(props) {
           {" "}
           <div className="m-3  p-6">
             <span className="font-rale font-black md:text-5xl text-2xl  text-white text-left">
-              Collaborate for your
+            Collaborate with us for your
             </span>
             <span
               className={`font-rale font-black md:text-5xl text-2xl text-kap  text-left" ${

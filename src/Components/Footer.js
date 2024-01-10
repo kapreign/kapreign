@@ -22,7 +22,9 @@ export default function Footer(props) {
             <img src={logo} alt="Kapreign Logo" />
           </a>
 
-          <div className="md:text-sm sm:text-xl text-lightGray md:ml-6 ml-0">
+          <div className=" text-lightGray md:ml-6 ml-0"
+          style={{fontSize:'18px'}}
+          >
             Collaborate for your Digital Experience
           </div>
           <div className="flex md:ml-2 mt-2 sm:ml-2">
@@ -46,14 +48,21 @@ export default function Footer(props) {
               <img src={FacebookImg} alt="Facebook" className="w-5" />
             </a>
           </div>
-          <span className="block md:text-sm sm:text-xl text-lightGray sm:text-center md:ml-6 mt-2 sm:ml-0">
-            © 2023{" "}
-            <a href="https://kapreign.com/" className="hover:underline">
+          <span 
+          className="block  text-lightGray sm:text-center md:ml-6 mt-2 sm:ml-0"
+          style={{fontSize:'18px'}}
+          >
+            © 2024{" "}
+            <a href="https://kapreign.com/" className="hover:underline"
+              style={{fontSize:'18px'}}
+            >
               Kapreign™
             </a>
             . All Rights Reserved.
           </span>
-          <div className=" md:text-sm sm:text-xl text-lightGray sm:text-center md:ml-6 mt-2 sm:ml-0">
+          <div className=" text-lightGray sm:text-center md:ml-6 mt-2 sm:ml-0"
+            style={{fontSize:'18px'}}
+          >
             Privacy policy | Terms of service
           </div>
           <div className="flex md:ml-6 mt-2 sm:ml-0 ">
@@ -133,7 +142,7 @@ export default function Footer(props) {
                 href="/services"
                 className="md:text-sm sm:text-xl hover:underline"
               >
-                Digital Marketing
+                Web Designing
               </a>
             </li>
             <li>
@@ -141,9 +150,10 @@ export default function Footer(props) {
                 href="/services"
                 className="md:text-sm sm:text-xl hover:underline"
               >
-                Data Analysis/ BPO
+                Digital Marketing
               </a>
             </li>
+            
           </ul>
         </div>
 

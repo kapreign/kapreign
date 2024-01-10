@@ -17,13 +17,13 @@ export default function ServiceCard() {
       image: MobAPP,
     },
     {
-        Heading: "Digital Marketing",
-        image: Digimarket,
-      },
-      {
-        Heading: "Data Analysis/ BPO",
-        image: DataBpo,
-      },
+      Heading: "Web Designing",
+      image: DataBpo,
+    },
+    {
+      Heading: "Digital Marketing",
+      image: Digimarket,
+    },
   ];
   return (
     <div>
