@@ -135,21 +135,25 @@ export default function Navbar(props) {
                       handleMenuToggle();
                     }}
                     className="text-white hover:text-gray cursor-pointer py-2"
+                    style={{fontSize:'18px'}}
                   >
                     About Us
                   </div>
 
                   <div
                     className="text-white hover:text-gray cursor-pointer py-2"
+                    style={{fontSize:'18px'}}
                     onClick={() => {
                       navigate("/caseStudy");
                       handleMenuToggle();
                     }}
+                    
                   >
                     Case Study
                   </div>
                   <div
                     className="text-white hover:text-gray cursor-pointer py-2"
+                    style={{fontSize:'18px'}}
                     onClick={() => {
                       navigate("/services");
                       handleMenuToggle();
@@ -159,6 +163,7 @@ export default function Navbar(props) {
                   </div>
                   <div
                     className="text-white hover:text-gray cursor-pointer py-2"
+                    style={{fontSize:'18px'}}
                     onClick={() => {
                       navigate("/blog");
                       handleMenuToggle();
