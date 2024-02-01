@@ -20,19 +20,15 @@ export default function ContactUsMain() {
       />
 
       <SenderWidget />
-      <div className="relative pt-24 pb-36 bg-white overflow-hidden bg-blacked">
+      <ContactUs theme={true} />
+      {/* <div className="relative pt-24 pb-36 bg-white overflow-hidden bg-blacked">
         <div className="relative z-10 container px-4 mx-auto">
           <div className="flex flex-wrap -m-3">
             <div className="w-full md:w-1/3 p-3">
               <div className="p-11 h-full text-center bg-black bg-opacity-90 md:border-r-4 border-indigo-500">
                 <div className="mb-6 relative mx-auto w-16 h-16 bg-black text-white  rounded-full">
                   <div className="absolute left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2">
-                    {/* <Icon
-                      icon="system-uicons:mail"
-                      height={50}
-                      width={50}
-                      classname="text-white hover:text-lightGray p-3 bg-white hover:bg-gray rounded-full"
-                    ></Icon> */}
+                 
                     <img className="" src={mailicon} alt="mail" />
                   </div>
                 </div>
@@ -79,7 +75,7 @@ export default function ContactUsMain() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <FreshdeskWidget />
     </div>
   );

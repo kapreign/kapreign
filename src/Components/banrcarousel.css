@@ -1,0 +1,48 @@
+/* .carousel-container {
+    margin: 50px auto;
+    max-width: 600px;
+  }
+  
+  .slick-center img {
+    transform: scale(1.2); 
+    transition: transform 0.5s ease;
+  }
+  
+  .slick-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; 
+  }
+   */
+
+   .carousel-container {
+    margin: 10px auto;
+    max-width: 650px; /* Adjust as needed */
+    overflow: hidden; /* Ensure that the overflow is hidden to contain the scaled image */
+  }
+  
+  .carousel-card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  /* .slick-center .carousel-card img {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+  }
+   */
+  .carousel-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Add border-radius for rounded corners if desired */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add shadow for a card-like effect */
+    object-fit: cover; /* Ensure that the image covers the entire container */
+  }
+  .centered{
+    transform: scale(1.05); /* Adjust the scale factor as needed */
+    transition: transform 0.5s ease;
+  }
+  

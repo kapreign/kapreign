@@ -5,18 +5,25 @@
     line-height: 30px;
     color: white;
     text-align: left;
+    /* max-width: 680px; */
+   /* background-color: aqua; */
+   width: 100%;
 }
 .BlogSubheading{
-    font-size: 20px;
+    /* font-size: 20px; */
     font-weight: normal;
     font-family: 'QUICK-THIN';
     line-height: 25px;
     color: white;
-    text-align: left;
+    text-align:left;
+    /* max-width: 680px; */
+    
 }
 .columnStyle{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .blogHeadingText{
     font-size: 40px;
@@ -24,5 +31,5 @@
     font-family: 'QUICK-REG';
     line-height: 30px;
     color: white;
-    text-align: left;
+    text-align: center;
 }

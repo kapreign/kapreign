@@ -115,8 +115,8 @@ export default function Navbar(props) {
             )}
           </div>
           {isMobileMenuOpen && (
-            <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-              <div className="bg-lightBlack bg-opacity-70 p-8 rounded-lg w-80">
+            <div className="fixed inset-0 bg-black bg-opacity-100 flex justify-center items-center">
+              <div className="bg-lightBlack bg-opacity-100 p-8 rounded-lg w-80">
                 <div
                   className="absolute top-5 right-5 cursor-pointer"
                   onClick={handleMenuToggle}
@@ -135,25 +135,24 @@ export default function Navbar(props) {
                       handleMenuToggle();
                     }}
                     className="text-white hover:text-gray cursor-pointer py-2"
-                    style={{fontSize:'18px'}}
+                    style={{ fontSize: "18px" }}
                   >
                     About Us
                   </div>
 
                   <div
                     className="text-white hover:text-gray cursor-pointer py-2"
-                    style={{fontSize:'18px'}}
+                    style={{ fontSize: "18px" }}
                     onClick={() => {
                       navigate("/caseStudy");
                       handleMenuToggle();
                     }}
-                    
                   >
                     Case Study
                   </div>
                   <div
                     className="text-white hover:text-gray cursor-pointer py-2"
-                    style={{fontSize:'18px'}}
+                    style={{ fontSize: "18px" }}
                     onClick={() => {
                       navigate("/services");
                       handleMenuToggle();
@@ -163,13 +162,23 @@ export default function Navbar(props) {
                   </div>
                   <div
                     className="text-white hover:text-gray cursor-pointer py-2"
-                    style={{fontSize:'18px'}}
+                    style={{ fontSize: "18px" }}
                     onClick={() => {
                       navigate("/blog");
                       handleMenuToggle();
                     }}
                   >
                     Blog
+                  </div>
+                  <div
+                    className="text-white hover:text-gray cursor-pointer py-2"
+                    style={{ fontSize: "18px" }}
+                    onClick={() => {
+                      navigate("/contactUs");
+                      handleMenuToggle();
+                    }}
+                  >
+                    Contact us
                   </div>
                   {/* Add other menu items similarly */}
                 </div>
@@ -207,6 +216,12 @@ export default function Navbar(props) {
           >
             Blog
           </div>
+          <div
+            onClick={() => navigate("/contactUs")}
+            className="px-4 py-1.5 text-base font-bold leading-6 text-white whitespace-no-wrap bg-kapblue shadow-sm hover:bg-darkBlue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue rounded-md"
+          >
+            Contact us
+          </div>
         </nav>
       );
     }
@@ -229,14 +244,14 @@ export default function Navbar(props) {
           {renderMenu()}
         </div>
 
-        <div className="hidden lg:inline-flex items-center w-32 ml-5 space-x-6 lg:justify-end cursor-pointer">
+        {/* <div className="hidden lg:inline-flex items-center w-32 ml-5 space-x-6 lg:justify-end cursor-pointer">
           <div
             onClick={() => navigate("/contactUs")}
             className="px-4 py-1.5 text-base font-bold leading-6 text-white whitespace-no-wrap bg-kapblue shadow-sm hover:bg-darkBlue focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue rounded-md"
           >
             Contact us
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

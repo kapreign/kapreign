@@ -29,36 +29,44 @@ const BlogPosts = ({ currentPage, DetailedContent }) => {
   }, [currentPage]);
 
   return (
-    <div className="p-8">
-      {currentPost && (
-        <div>
-          <div className="text-white-700 text-lg ">
-            <div className="columnStyle">
-              <h2 className="text-2xl font-bold mb-5 BlogHead">Introduction</h2>
-              <p className="BlogSubheading">
-                {currentPost.content.Introduction}
-              </p>
-            </div>
-            {currentPost.content.Sections.map((section, index) => (
-              <div key={index} className="mt-8 columnStyle">
-                <h2 className="text-2xl font-bold mb-5 BlogHead">
-                  {section.title}
+    <div className="">
+      <div className="flex items-center justify-center ">
+        {currentPost && (
+          <div className="max-w-2xl p-4">
+            <div className="text-white-700 text-lg">
+              <div className="columnStyle">
+                <h2 className="text-2xl font-bold mb-3 BlogHead">
+                  Introduction
                 </h2>
-                <p className="BlogSubheading">{section.content}</p>
+                <p className="BlogSubheading text-lg">
+                  {currentPost.content.Introduction}
+                </p>
               </div>
-            ))}
-            <div className="mt-6 columnStyle">
-              <h2 className="text-2xl font-bold mb-5 BlogHead">Conclusion</h2>
-              <p className="BlogSubheading">{currentPost.content.Conclusion}</p>
+              {currentPost.content.Sections.map((section, index) => (
+                <div key={index} className="mt-8 columnStyle">
+                  <h2 className="text-2xl font-bold mb-3 BlogHead">
+                    {section.title}
+                  </h2>
+                  <p className="BlogSubheading text-lg">{section.content}</p>
+                </div>
+              ))}
+              <div className="mt-6 columnStyle">
+                <h2 className="text-2xl font-bold mb-3 BlogHead">Conclusion</h2>
+                <p className="BlogSubheading text-lg">
+                  {currentPost.content.Conclusion}
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
       <div className="divide-y divide-blue-700 divide-dashed hover:divide-solid"></div>
       <div className="mt-14 divide-y divide-blue-700 divide-dashed hover:divide-solid">
-        <div className="blogHeadingText">More Blogs</div>
+        <div className="blogHeadingText pb-2">More Blogs</div>
       </div>
-      <ImageCardList cards={nextCards} Pagination={false} />
+      <div className="md:px-10">
+        <ImageCardList cards={nextCards} Pagination={false} />
+      </div>
     </div>
   );
 };

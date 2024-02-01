@@ -91,17 +91,18 @@
   } */
   
   .aboutDetails{
-    width: 100%;
-    display: flex;
+    /* width: 100%; */
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-    height: 200px;
+    align-items: center; */
+    /* height: 200px; */
+    text-align: center;
   }
   .aboutText{
     font-size: 20px;
     color: #fff;
     text-align: center;
-    width: 80%;
+    width: 100%;
     font-family: 'QUICK-THIN';
   }
 

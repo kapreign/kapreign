@@ -93,9 +93,9 @@ export default function About() {
         </div>
       </div>
 
-      <div style={{ backgroundColor: "black" }}>
-        <div className="aboutDetails">
-          <div className="aboutText">
+      <div style={{ backgroundColor: "black" }} >
+        <div className="aboutDetails mt-4">
+          <div className="aboutText p-2">
             Kapreign, established in 2020 and headquartered in Angamaly, Kochi,
             Kerala, India, is a dynamic software development company on a
             mission to drive innovation in the realm of digital transformation.

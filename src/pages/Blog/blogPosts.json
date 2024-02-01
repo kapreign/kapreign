@@ -2,6 +2,8 @@
   {
     "image": "Assets/Images/Navigating_Agile.svg",
     "title": "Navigating the Agile Waters: A Guide for Software Development Success",
+    "date": "12-08-2022",
+    "time": "10",
     "content": {
       "Introduction": "In today's fast-paced IT landscape, Agile methodology has emerged as a game-changer for software development. In this blog post, we explore the principles of Agile and how its iterative approach enhances collaboration, flexibility, and ultimately, project success. Discover how our software development team leverages Agile to deliver high-quality solutions that meet evolving client needs.",
       "Sections": [
@@ -42,6 +44,8 @@
   {
     "image": "Assets/Images/Decoding_the_Future_Trends_Shaping_the_Software.svg",
     "title": "Decoding the Future: Trends Shaping the Software Development Industry",
+    "date": "20-11-2022",
+    "time": "12",
     "content": {
       "Introduction": "The software development industry is continuously evolving, driven by technological advancements and changing market demands. In this blog, we will explore the key trends that are shaping the future of software development. From the integration of Artificial Intelligence (AI) to the rise of low-code development and the Internet of Things (IoT), these trends are transforming the way software is designed, developed, and deployed.",
       "Sections": [
@@ -83,6 +87,8 @@
   {
     "image": "Assets/Images/Cybersecurity_in_Software_Development_photo.svg",
     "title": "Ensuring Cybersecurity in Software Development: A Comprehensive Guide",
+    "date": "01-01-2023",
+    "time": "6",
     "content": {
       "Introduction": "As cyber threats continue to evolve, ensuring robust cybersecurity in software development is non-negotiable...",
       "Sections": [
@@ -130,6 +136,8 @@
   {
     "image": "Assets/Images/Software_Development.svg",
     "title": "The Power of DevOps: Streamlining Software Development Lifecycles",
+    "date": "28-04-2023",
+    "time": "5",
     "content": {
       "Introduction": "Explore the transformative impact of DevOps on software development lifecycles...",
       "Sections": [
@@ -163,6 +171,8 @@
   {
     "image": "Assets/Images/User_Experience_in_Software_Development_photo.svg",
     "title": "Mastering User Experience: A Key Ingredient in Software Development Success",
+    "date": "06-09-2023",
+    "time": "3",
     "content": {
       "Introduction": "User experience (UX) is a critical factor in the success of any software application...",
       "Sections": [
@@ -199,6 +209,8 @@
   {
     "image": "Assets/Images/What_is_Digital_Transformation.svg",
     "title": "Unlocking Innovation: The Role of Custom Software Development",
+    "date": "1-12-2023",
+    "time": "8",
     "content": {
       "Introduction": "Tailored solutions are the key to unlocking innovation in today's competitive business landscape...",
       "Sections": [

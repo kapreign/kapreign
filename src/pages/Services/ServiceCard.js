@@ -28,7 +28,7 @@ export default function ServiceCard() {
   return (
     <div>
       <div style={{ backgroundColor: "black" }}>
-        <div style={{ color: "white", textAlign: "left", padding: "50px" }}>
+        <div style={{ color: "white", textAlign: "left",  }} className="p-4 md:p-6">
           <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-8">
             {CardData.map((Data) => (
               <div>
@@ -49,7 +49,7 @@ export default function ServiceCard() {
                   >
                     <div>
                       <h2
-                        className="serviceHead"
+                        className="serviceHead text-2xl"
                         style={{ textAlign: "center" }}
                       >
                         {Data?.Heading}

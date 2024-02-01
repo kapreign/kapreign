@@ -232,7 +232,7 @@ export default function Landing(props) {
             animationCardVariants={animationCard3Variants}
             CardVideo={MarketingVideo}
           />
-          <Cards
+          {/* <Cards
             title="Business Process "
             subtitle="Outsourcing"
             technologies="IT Consulting, Data Analytics, Marketing Solutions"
@@ -243,7 +243,7 @@ export default function Landing(props) {
             scrollY={scrollY}
             animationCardVariants={animationCard4Variants}
             CardVideo={Bpo}
-          />
+          /> */}
         </div>
       </div>
     </div>

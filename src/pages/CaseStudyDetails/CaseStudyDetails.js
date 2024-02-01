@@ -80,7 +80,7 @@ export default function CaseStudyDetailed({ children }) {
         />
       </div>
       <div style={{ backgroundColor: "black" }}>
-        <div style={{ color: "white", textAlign: "left", padding: "50px" }}>
+        <div style={{ color: "white", textAlign: "left", padding: "20px" }}>
           <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2  gap-4">
             <div>
               <div className="outline outline-offset-2 outline-blue-500 rounded-lg p-5">

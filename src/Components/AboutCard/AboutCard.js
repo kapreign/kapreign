@@ -25,7 +25,7 @@ export default function AboutCard({
           </div>
           <div
           
-            className="w-2/3 CardContent  px-5  "
+            className="w-2/3 CardContent    "
           >
             <motion.div
               initial="outOfView"

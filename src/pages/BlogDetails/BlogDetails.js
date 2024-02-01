@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 import TopBanner from "../../Components/Topbanner/TopBanner";
 import BlogPosts from "../Blog/BlogPost";
 
-
 export default function BlogDetails() {
   const location = useLocation();
 
@@ -11,7 +10,7 @@ export default function BlogDetails() {
     window.scrollTo(0, 0); // Scrolls to the top of the page on component mount
   }, []);
 
-  console.log("dddddddddd",location?.state?.DetailedContent?.image)
+  // console.log("dddddddddd", location?.state?.DetailedContent?.image);
   return (
     <div style={{ backgroundColor: "black" }}>
       <div>
@@ -23,8 +22,10 @@ export default function BlogDetails() {
         />
       </div>
       <div style={{ backgroundColor: "black" }}>
-        <div style={{ color: "white", textAlign: "left", padding: "50px" }}>
-          <div className="mt-5 pt-5">
+        <div style={{ color: "white", textAlign: "left" }}>
+          <div className="mt-5 pt-5" 
+          // style={{maxWidth:'650px', display:'flex',justifyContent:'center',alignItems:'center', alignSelf:'center'}}
+          >
             <BlogPosts
               currentPage={location?.state?.index}
               DetailedContent={location?.state?.DetailedContent}

@@ -73,13 +73,13 @@ export default function Footer(props) {
 
         <div>
           <ul className="text-sm text-lightGray flex flex-col text ml-4 md:text-left sm:text-center ">
-            <li className="md:text-sm sm:text-xl font-bold text-white">
+            <li className="md:text-md sm:text-xl font-bold text-white">
               Company
             </li>
             <li>
               <a
                 href="/about"
-                className=" hover:underline md:text-sm sm:text-xl"
+                className=" hover:underline md:text-md sm:text-xl"
               >
                 About Us
               </a>
@@ -87,7 +87,7 @@ export default function Footer(props) {
             <li>
               <a
                 href="/caseStudy"
-                className="md:text-sm sm:text-xl hover:underline"
+                className="md:text-md sm:text-xl hover:underline"
               >
                 Case Study
               </a>
@@ -95,20 +95,20 @@ export default function Footer(props) {
             <li>
               <a
                 href="/services"
-                className="md:text-sm sm:text-xl hover:underline"
+                className="md:text-md sm:text-xl hover:underline"
               >
                 Service
               </a>
             </li>
             <li>
-              <a href="/blog" className="md:text-sm sm:text-xl hover:underline">
+              <a href="/blog" className="md:text-md sm:text-xl hover:underline">
                 Blog
               </a>
             </li>
             <li>
               <a
-                href="https://wa.me/9497656243"
-                className="md:text-sm sm:text-xl hover:underline"
+                href="/contactUs"
+                className="md:text-md sm:text-xl hover:underline"
               >
                 Contact
               </a>
@@ -118,13 +118,13 @@ export default function Footer(props) {
 
         <div>
           <ul className="text-sm text-lightGray flex flex-col text ml-4 md:text-left sm:text-center ">
-            <li className="md:text-sm sm:text-xl font-bold text-white">
+            <li className="md:text-md sm:text-xl font-bold text-white">
               Services
             </li>
             <li>
               <a
                 href="/services"
-                className="md:text-sm sm:text-xl hover:underline"
+                className="md:text-md sm:text-xl hover:underline"
               >
                 Web App Development
               </a>
@@ -132,7 +132,7 @@ export default function Footer(props) {
             <li>
               <a
                 href="/services"
-                className="md:text-sm sm:text-xl hover:underline"
+                className="md:text-md sm:text-xl hover:underline"
               >
                 Mobile App Development
               </a>
@@ -140,7 +140,7 @@ export default function Footer(props) {
             <li>
               <a
                 href="/services"
-                className="md:text-sm sm:text-xl hover:underline"
+                className="md:text-md sm:text-xl hover:underline"
               >
                 Web Designing
               </a>
@@ -148,7 +148,7 @@ export default function Footer(props) {
             <li>
               <a
                 href="/services"
-                className="md:text-sm sm:text-xl hover:underline"
+                className="md:text-md sm:text-xl hover:underline"
               >
                 Digital Marketing
               </a>
@@ -159,22 +159,22 @@ export default function Footer(props) {
 
         <div>
           <ul className="text-sm text-lightGray flex flex-col text ml-4 md:text-left sm:text-center ">
-            <li className="md:text-sm sm:text-xl font-bold text-white">
+            <li className="md:text-md sm:text-xl font-bold text-white">
               Address
             </li>
-            <li className="md:text-sm sm:text-xl">Vengoor, Angamaly,</li>
-            <li className="md:text-sm sm:text-xl">Kerala, 683572</li>
-            <li className="md:text-sm sm:text-xl font-bold text-white mt-2">
+            <li className="md:text-md sm:text-xl">Vengoor, Angamaly,</li>
+            <li className="md:text-md sm:text-xl">Kerala, 683572</li>
+            <li className="md:text-md sm:text-xl font-bold text-white mt-2">
               Contact
             </li>
-            <li className="md:text-sm sm:text-xl">+91 9746574532</li>
-            <li className="md:text-sm sm:text-xl">+91 7907226404</li>
-            <li className="md:text-sm sm:text-xl">info@kapreign.com</li>
+            <li className="md:text-md sm:text-xl">+91 9746574532</li>
+            <li className="md:text-md sm:text-xl">+91 7907226404</li>
+            <li className="md:text-md sm:text-xl">info@kapreign.com</li>
 
-            <li className="md:text-sm sm:text-xl font-bold text-white mt-2 ">
+            <li className="md:text-md sm:text-xl font-bold text-white mt-2 ">
               Support Center
             </li>
-            <a href="https://kapreign.freshdesk.com/support/login" className="md:text-sm sm:text-xl cursor-pointer">Raise a Ticket</a>
+            <a href="https://kapreign.freshdesk.com/support/login" className="md:text-md sm:text-xl cursor-pointer">Raise a Ticket</a>
           </ul>
         </div>
       </div>

@@ -8,10 +8,24 @@ const ImageCard = ({
   DetailedContent,
   index,
   cards,
+  date,
 }) => {
   const navigate = useNavigate();
+  // const handleCardClick = () => {
+  //   const headingInRoute = title.replace(/\s+/g, '-').toLowerCase(); // Convert heading to kebab case
+
+  //   navigate(`/blogView/${headingInRoute}`, {
+  //     state: {
+  //       DetailedContent: DetailedContent,
+  //       index: index,
+  //     },
+  //   });
+  //   scrollToTop();
+  // };
+
   const handleCardClick = () => {
-    navigate("/blogView", {
+    const headingInRoute = title.replace(/\s+/g, "-").toLowerCase(); // Convert heading to kebab case
+    navigate(`/blog/${headingInRoute}`, {
       state: {
         DetailedContent: DetailedContent,
         index: index,
@@ -23,29 +37,29 @@ const ImageCard = ({
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth' // You can change this to 'auto' for an instant scroll
+      behavior: "smooth", // You can change this to 'auto' for an instant scroll
     });
   };
-  
 
   return (
     <div
-      className=" w-full md:w-1/3 lg:w-1/3 xl:w-1/3 p-8 h-90 cursor-pointer "
+      className=" w-full md:w-1/3 lg:w-1/3 xl:w-1/3  p-2 h-90 cursor-pointer "
       onClick={() => handleCardClick()}
     >
       <div className=" h-3/4 overflow-hidden  shadow-md  ">
-        <img
-          src={require(`../../${image}`)}
-          alt="Card"
-          className="w-full "
-        />
+        <img src={require(`../../${image}`)} alt="Card" className="w-full " />
       </div>
       <div className="flex justify-between pt-2 mb-4">
-        <h2 className="text-lg font-bold text-white Blogsubheading">Blog</h2>
-        <h2 className="text-lg font-bold  text-white Blogsubheading">Date</h2>
+        <h2 className="text-lg font-bold text-white Blogsubheading">
+          {" "}
+          {DetailedContent?.date}
+        </h2>
+        <h2 className="text-lg font-bold  text-white Blogsubheading">
+          {DetailedContent?.time} min read
+        </h2>
       </div>
       <div className=" h-1/4 w-full  flex flex-col bg-black ">
-        <h2 className="text-lg font-bold mb-2 text-white Caseheadinglarge">
+        <h2 className="text-lg font-bold mb-2 text-white text-justify Caseheadinglarge">
           {title}
         </h2>
       </div>
@@ -73,7 +87,7 @@ const ImageCardList = ({ cards, Pagination }) => {
   );
 
   return (
-    <div className="flex flex-wrap mx-4">
+    <div className="flex flex-wrap ">
       {displayCards.map((card, index) => (
         <ImageCard
           key={index}

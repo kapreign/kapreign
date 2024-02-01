@@ -11,10 +11,7 @@ function App() {
     return { ...route };
   });
 
-
-
   const wrapperLayout = (child, key) => {
-    console.log(child, "child");
     return <MainLayout>{child}</MainLayout>;
   };
 
@@ -39,27 +36,27 @@ function App() {
     return null;
   };
 
-  console.log(appRoutes, "appRoutes");
   return (
     <div className="App">
-      {/* <MainLayout>
-      </MainLayout> */}
-
       <BrowserRouter>
-      <ScrollToTop/>
+        <ScrollToTop/>
         <Routes>
-          {appRoutes &&
-            Object.keys(appRoutes).map((key) => {
-              const route = appRoutes[key];
-              return (
-                <Route
-                  key={route.key}
-                  path={route.path}
-                  exact={route.exact}
-                  element={wrapperLayout(<route.Component />, route.key)}
-                />
-              );
-            })}
+          {appRoutes.map((route) => (
+            <Route
+              key={route.key}
+              path={route.path}
+              exact={route.exact}
+              element={wrapperLayout(<route.Component />, route.key)}
+            />
+          ))}
+
+          {/* Dynamic path for BlogDetails */}
+          <Route
+            path="/blog/:title"
+            element={wrapperLayout(<ROUTES.BlogDetails.Component />, ROUTES.BlogDetails.key)}
+          />
+
+          {/* Catch-all route for non-matching paths */}
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
